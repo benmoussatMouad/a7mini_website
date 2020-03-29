@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+    font-style: 16px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #5e5e5e;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    opacity: .7;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+section {
+    margin: 25px 0;
+}
+
+.section-header {
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.section-header-upper {
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: Poppins, sans-serif;
+    color: #02C084;
+    margin: 0 0 10px;
+    opacity: 1;
+}
