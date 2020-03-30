@@ -13,3 +13,19 @@
     transition: all .3s ease-in-out;
     /*margin-bottom: 30px;*/
 }
+
+.symptoms .symptoms-text .btn-primary {
+    display: block;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    border-radius: 25px;
+    background-color: #0f6674;
+    font-size: 0.8rem;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
