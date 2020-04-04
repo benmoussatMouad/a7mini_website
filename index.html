@@ -5,16 +5,27 @@
     <!--Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
     <!--<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
     <!--<div>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,height=device-height,  initial-scale=1.0">
 
+    <script src="js/countUp.js" type="module"></script>
+    <!--Imporing Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--Importing AOS.js Library-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <!--Impoting Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Rakkas|Tajawal&display=swap" rel="stylesheet">
+    <!--Importing Stylesheet-->
     <link rel="stylesheet" href="css/style.css">
+
     <title>A7mini</title>
 </head>
 <body>
@@ -25,18 +36,29 @@
         <ul class="d-flex flex-sm-row-reverse align-items-center">
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#symptoms">SYMPTOMES</a></li>
-            <li><a href="#status">STATUS</a></li>
             <li><a href="#mission">MISSION</a></li>
             <li><a href="#partners">A PROPOS</a></li>
+            <li class="special-nav"><a href="#status">STATUS EN ALGÉRIE</a></li>
         </ul>
-        <div class="btn btn-burger align-self-center"><img src="imgs/menu.svg" alt=""></div>
+        <div class="btn btn-burger align-self-center" onclick="openMobileMenu()"><img src="imgs/menu.svg" alt=""></div>
+        <div class="btn btn-close align-self-center " onclick="closeMobileMenu()"><img src="imgs/close-btn.svg" alt=""></div>
+        <div class="mobile-menu closed-menu">
+            <ul class="d-flex flex-column align-items-center justify-content-around w-100">
+                <li onclick="closeMobileMenu()"><a href="#partners">A PROPOS</a></li>
+                <li onclick="closeMobileMenu()"><a href="#mission">MISSION</a></li>
+                <li onclick="closeMobileMenu()"><a href="#map">STATUS</a></li>
+                <li onclick="closeMobileMenu()"><a href="#symptoms">SYMPTOMES</a></li>
+                <li onclick="closeMobileMenu()"><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
     </header>
     <section id="hero" class="hero" >
-        <div class="container" data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-duration="800">
-            <div class="bg-container" >
+        <div class="container d-flex flex-column justify-content-between"
+             data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-duration="800">
+            <div class="bg-container flex-grow-1 flex-md-grow-0" >
                 <img src="imgs/Ahmini%20logotype%20couleur.svg" alt="">
             </div>
-            <h3 class="text-center"> وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعاً</h3>
+            <h3 class="text-center flex-grow-1"> وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعاً</h3>
         </div>
     </section>
     <section id="partners" class="partners">
@@ -55,10 +77,10 @@
                         <div class="col-6 p-3">
                             <img src="imgs/CNOP.png" alt="">
                         </div>
-                        <div class="col-4 p-2">
+                        <div class="col-sm-4 col-6 p-2">
                             <img src="imgs/sami.png" alt="">
                         </div>
-                        <div class="col-4 p-2">
+                        <div class="col-sm-4 col-6 p-2">
                             <img src="imgs/SAOM.png" alt="">
                         </div>
                         <div class="col-4 p-2">
@@ -73,31 +95,25 @@
         <div class="container">
             <div class="mission-bg"><img src="imgs/virus-bg.svg" alt="corona virus floating" class=""></div>
             <p class="section-header-upper">Qui somme nous</p>
-            <h2 class="section-header">Notre Mission</h2>
+            <h2 class="section-header">Pourquoi A7mini</h2>
             <div class="row">
-                <div class="col-md-4 mb-md-0 mb-sm-4 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div class="col-md-4 mb-md-0 mb-4 col-xs-12" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="mission-container">
-                        <h3>Mission 1</h3>
+                        <h3>Mission</h3>
                         <div class="mission-icon"><img src="imgs/shield.svg" width="100" alt=""></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur in turpis non
-                            vehicula. Nulla in consectetur ante, ut pulvinar tellus. Vestibulum vitae ex varius, varius
-                            felis non, consectetur dui.. </p>
+                        <p>Diminuant la surcharge de notre système de santé pour assurer une meilleure prise en charge et le rétablissement des patients les plus lourdement atteints. </p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-md-0 mb-sm-4 col-sm-12" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-center">
+                <div class="col-md-4 mb-md-0 mb-4 col-xs-12" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-center">
                     <div class="mission-container">
-                        <h3>Mission 2</h3>
+                        <h3>Vision</h3>
                         <div class="mission-icon"><img src="imgs/brain.svg" width="100" alt=""></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur in turpis non
-                            vehicula. bus pretium lorem a laoreet. Curabitur scelerisque
-                            feugiat eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                            inceptos himenaeos. Vestibulum viverra elit in blandit luctus. Phasellus imperdiet at ligula
-                            eget elementum. </p>
+                        <p>la protection des citoyens contre le virus SARS-CoV2.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-center">
+                <div class="col-md-4 col-xs-12" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-center">
                     <div class="mission-container">
-                        <h3>Mission 3</h3>
+                        <h3>Objectif</h3>
                         <div class="mission-icon"><img src="imgs/www.svg" width="100" alt=""></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur in turpis non
                             vehicula. Nulla in consectetur ante, ut pulvinar tellus. Vestibulum vitae ex varius, varius
@@ -110,19 +126,75 @@
     </section>
     <section id="status" class="status">
         <div class="container">
+            <p class="section-header-upper">L'état</p>
+            <h2 class="section-header">Status Dans L'algérie</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 status-element">
+                    <img src="imgs/coronavirus.svg" width="100" alt="">
+                    <p class="status-number status-number-inf">800</p>
+                    <p class="status-text">Infectés</p>
+                </div>
+                <div class="col-md-4 col-sm-12 status-element">
+                    <img src="imgs/vaccine.svg" alt="">
+                    <p class="status-number status-number-ret">100</p>
+                    <p class="status-text">Rétablis</p>
+                </div>
+                <div class="col-md-4 col-sm-12 status-element">
+                    <img src="imgs/hospital-bed.svg" alt="">
+                    <p class="status-number status-number-dec">40</p>
+                    <p class="status-text">Décès</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map" class="map">
+        <div class="container">
             <p class="section-header-upper">Où est l'Algérie</p>
-            <h2 class="section-header">Status En Algérie</h2>
-            <div class="piktowrapper-embed" style="height: 100px; position: relative;" data-uid="45275325-map">
-                <div class="pikto-canvas-wrap">
-                    <div class="pikto-canvas">
-                        <div class="embed-loading-overlay" style="width: 100%; height: 100%; position: absolute; text-align: center;">
-                            <img width="60px" alt="Loading..." style="margin-top: 100px" src="https://create.piktochart.com/loading.gif"/>
-                            <p style="margin: 0; padding: 0; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 16px">Loading...</p>
+            <h2 class="section-header">Statistiques</h2>
+            <h3 class="text-center">Cas d'infection par Wilaya</h3>
+            <div class="map-wrapper w-75 mx-auto" >
+                <div class="piktowrapper-embed"
+                     style="height: 300px;background-color: coral; width: 0px;position: relative;"
+                     data-uid="45276330-map-2">
+                    <div class="pikto-canvas-wrap" style="width: 200px;">
+                        <div class="pikto-canvas" style="width: 200px;">
+                            <div class="embed-loading-overlay"
+                                 style="width: 100%; height: 100%; position: absolute; text-align: center;">
+                                <img width="60px" alt="Loading..." style="margin-top: 100px"
+                                     src="https://create.piktochart.com/loading.gif"/>
+                                <p style="margin: 0; padding: 0; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 16px">
+                                    Loading...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <script>(function (d) {
+
+                    var js, id = "pikto-embed-js", ref = d.getElementsByTagName("script")[0];
+                    if (d.getElementById(id)) {
+                        return;
+                    }
+                    js = d.createElement("script");
+                    js.id = id;
+                    js.async = true;
+                    js.src = "https://create.piktochart.com/assets/embedding/embed.js";
+                    ref.parentNode.insertBefore(js, ref);
+                }(document));</script>
             </div>
-            <script>(function(d){var js, id="pikto-embed-js", ref=d.getElementsByTagName("script")[0];if (d.getElementById(id)) { return;}js=d.createElement("script"); js.id=id; js.async=true;js.src="https://create.piktochart.com/assets/embedding/embed.js";ref.parentNode.insertBefore(js, ref);}(document));</script>
+            <div class="row pt-3">
+                <div class="col-md-6 col-sm-12">
+                    <h3 class="text-center">Graphe des cas</h3>
+                    <div class="graph-wrapper">
+                        <div class="piktowrapper-embed" style="height: 300px; position: relative;" data-uid="45355817-graphe-cas"><div class="pikto-canvas-wrap"><div class="pikto-canvas"><div class="embed-loading-overlay" style="width: 100%; height: 100%; position: absolute; text-align: center;"><img width="60px" alt="Loading..." style="margin-top: 100px" src="https://create.piktochart.com/loading.gif"/><p style="margin: 0; padding: 0; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 16px">Loading...</p></div></div></div></div><script>(function(d){var js, id="pikto-embed-js", ref=d.getElementsByTagName("script")[0];if (d.getElementById(id)) { return;}js=d.createElement("script"); js.id=id; js.async=true;js.src="https://create.piktochart.com/assets/embedding/embed.js";ref.parentNode.insertBefore(js, ref);}(document));</script>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h3 class="text-center">Graphe des décès</h3>
+                    <div class="graph-wrapper">
+                        <div class="piktowrapper-embed" style="height: 300px; position: relative;" data-uid="45355859-graphe-deaths"><div class="pikto-canvas-wrap"><div class="pikto-canvas"><div class="embed-loading-overlay" style="width: 100%; height: 100%; position: absolute; text-align: center;"><img width="60px" alt="Loading..." style="margin-top: 100px" src="https://create.piktochart.com/loading.gif"/><p style="margin: 0; padding: 0; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 16px">Loading...</p></div></div></div></div><script>(function(d){var js, id="pikto-embed-js", ref=d.getElementsByTagName("script")[0];if (d.getElementById(id)) { return;}js=d.createElement("script"); js.id=id; js.async=true;js.src="https://create.piktochart.com/assets/embedding/embed.js";ref.parentNode.insertBefore(js, ref);}(document));</script>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="symptoms" class="symptoms">
@@ -130,13 +202,20 @@
             <p class="section-header-upper">Suis-je malade ?</p>
             <h2 class="section-header">Symptomes du COVID-19</h2>
             <div class="row">
-                <div class="col-6">
+                <div class="d-block d-md-none col-12 symptoms-text-mobile-wrapper">
+                    <div class="symptoms-text symptoms-text-mobile">
+                        <h3 class="symptoms-title">Les Premiers Jours</h3>
+                        <p class="symptoms-paragraph">La plupart ont de la fièvre. Le virus peut également provoquer des douleurs musculaires, de la fatigue, des  étourdissements et même de la diarrhée. La plupart montrent des signes d’amélioration après 6 à 7 jours.</p>
+                        <button id="symptoms-test-btn-2" class="btn btn-primary">Se faire tester</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 imgs-wrapper">
                     <img id="symptoms-img-1" src="imgs/symptom_step1.png" alt="" class="w-100 symptoms-img">
                     <img id="symptoms-img-2" src="imgs/symptom_step2.png" alt="" class="w-100 symptoms-img">
                     <img id="symptoms-img-3" src="imgs/symptom_step3.png" alt="" class="w-100 symptoms-img">
                     <img id="symptoms-img-4" src="imgs/symptom_step4.png" alt="" class="w-100 symptoms-img">
                 </div>
-                <div class="col-6">
+                <div class="d-none d-md-block col-md-6 col-sm-4">
                     <div class="symptoms-text">
                         <h3 class="symptoms-title">Les Premiers Jours</h3>
                         <p class="symptoms-paragraph">La plupart ont de la fièvre. Le virus peut également provoquer des douleurs musculaires, de la fatigue, des  étourdissements et même de la diarrhée. La plupart montrent des signes d’amélioration après 6 à 7 jours.</p>
@@ -146,6 +225,23 @@
             </div>
         </div>
     </section>
+    <section class="restrictions">
+
+    </section>
+    <!--<section class="recommendations">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-12 col-md-6 recommendation-element">-->
+                    <!--<img src="" alt="">-->
+                    <!--<p>Recommandation Pour Le Public</p>-->
+                <!--</div>-->
+                <!--<div class="col-12 col-md-6 recommendation-element">-->
+                    <!--<img src="" alt="">-->
+                    <!--<p>Recommandation Pour Les Professionnels De La Santé</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
     <section id="faq">
         <div class="container faq-container">
             <h2 class="section-header text-center font-weight-bold">Questions Les Plus Fréquentes</h2>
@@ -614,12 +710,44 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-center w-100">Combatons le COVID-19</h2>
+                        <h3 class="text-center w-100">Rejoignez nous !</h3>
+                        <div class="links d-flex">
+                            <a id="facebook" href="https://www.facebook.com/A7miniCOVID19/">
+                                <img src="imgs/facebook.svg" alt="">
+                            </a>
+                            <a id="mail" href="">
+                                <img src="imgs/www2.svg" alt="">
+                            </a>
+                            <a id="twitter" href="https://twitter.com/A7miniCovid19">
+                                <img src="imgs/twitter.svg" alt="">
+                            </a>
+                        </div>
+                        <p class="pt-4 text-white"><b>a7mini@gmail.com</b></p>
+                    </div>
+                </div>
+                <!--<div class="col-6">-->
+                <!--<h3>Hello World !</h3>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <p class="copyright w-100 text-center">&copy 2020 Fédération Algérienne de Pharmacie. Tous Droits Réservés.</p>
+    </footer>
 
     <!--<div style="height: 1000px;"></div>-->
 
     <!--Script-->
+    <!--Importing CountUp Library-->
+    <!--<script src="js/countUp.js" type="module"></script>-->
+
     <script src="js/header.js"></script>
     <script src="js/ouvrir-fermer-faq.js"></script>
+    <!--<script src="js/status.js" type="module"></script>-->
     <script src="js/scrollEvent.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

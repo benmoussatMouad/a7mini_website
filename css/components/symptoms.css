@@ -4,6 +4,21 @@
     top: 45%;
 }
 
+.symptoms-text-mobile-wrapper {
+    position: absolute;
+    height: 400%;
+}
+.symptoms .symptoms-text-mobile {
+    background-color: #ffffff25;
+    z-index: 1;
+    top: 15%;
+}
+@media screen and (max-width: 800px) {
+    .symptoms .imgs-wrapper {
+        padding-top: 20%;
+    }
+}
+
 .symptoms img {
     opacity: 0;
     -webkit-transition: all .3s ease-in-out;

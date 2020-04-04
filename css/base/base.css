@@ -1,6 +1,14 @@
 html {
     scroll-behavior: smooth;
-    font-style: 16px;
+    font-size: 16px;
+    height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+
 }
 
 body {
@@ -8,6 +16,7 @@ body {
     color: #5e5e5e;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 p {
@@ -16,6 +25,9 @@ p {
 
 h1 {
     font-size: 4rem;
+}
+h3 {
+    font-size: 2rem;
 }
 
 section {

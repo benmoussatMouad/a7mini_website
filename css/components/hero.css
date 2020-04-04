@@ -1,19 +1,48 @@
 .hero {
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
     height: 100vh;
     margin: 0;
 }
 
+.hero .container {
+    height: 100vh;
+}
+
 .hero .bg-container {
-    overflow-y: hidden;
+    overflow: hidden;
     margin: auto;
+    width: 100%;
+    min-width: 300px;
     max-width: 800px;
     max-height: 650px;
+    /*height: 100vh;*/
+    position: relative;
+}
+
+@media screen and (max-width: 400px) {
+    .hero .bg-container {
+        padding-top: 30%;
+    }
+
+}
+
+.hero .bg-container img {
+    /*width: 800px;*/
+    margin: auto;
 }
 
 .hero h3 {
     font-family: "Rakkas", sans-serif;
     font-size: 5rem;
     color: #0e5865;
-    margin-top: 25px;
+    /*padding-bottom:  250px;*/
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .hero h3 {
+        font-size: 4.5rem;
+    }
 }
