@@ -14,6 +14,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,height=device-height,  initial-scale=1.0">
 
+    <script src="js/loader.js"></script>
+    <!--<script src="js/loader.js"></script>-->
     <script src="js/countUp.js" type="module"></script>
     <!--Imporing Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -29,716 +31,823 @@
     <title>A7mini</title>
 </head>
 <body>
+    <div id="loader" class="d-flex justify-content-center align-items-center">
+        <div class="loader-img-wrapper"><img src="imgs/Ahmini%20logotype%20couleur.svg" alt=""></div>
+    </div>
 
-    <header class="d-flex flex-row justify-content-between align-content-center">
-        <div class="header-bg"></div>
-        <img src="imgs/logo-compact.svg" alt="hackIT logo" class="logo">
-        <ul class="d-flex flex-sm-row-reverse align-items-center">
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#symptoms">SYMPTOMES</a></li>
-            <li><a href="#mission">MISSION</a></li>
-            <li><a href="#partners">A PROPOS</a></li>
-            <li class="special-nav"><a href="#status">STATUS EN ALGÉRIE</a></li>
-        </ul>
-        <div class="btn btn-burger align-self-center" onclick="openMobileMenu()"><img src="imgs/menu.svg" alt=""></div>
-        <div class="btn btn-close align-self-center " onclick="closeMobileMenu()"><img src="imgs/close-btn.svg" alt=""></div>
-        <div class="mobile-menu closed-menu">
-            <ul class="d-flex flex-column align-items-center justify-content-around w-100">
-                <li onclick="closeMobileMenu()"><a href="#partners">A PROPOS</a></li>
-                <li onclick="closeMobileMenu()"><a href="#mission">MISSION</a></li>
-                <li onclick="closeMobileMenu()"><a href="#map">STATUS</a></li>
-                <li onclick="closeMobileMenu()"><a href="#symptoms">SYMPTOMES</a></li>
-                <li onclick="closeMobileMenu()"><a href="#faq">FAQ</a></li>
+
+    <div id="content-wrapper">
+        <header class="d-flex flex-row justify-content-between align-content-center">
+            <div class="header-bg"></div>
+            <img src="imgs/logo-compact.svg" alt="hackIT logo" class="logo">
+            <ul class="d-flex flex-sm-row-reverse align-items-center">
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#symptoms">SYMPTOMES</a></li>
+                <li><a href="#mission">MISSION</a></li>
+                <li><a href="#partners">A PROPOS</a></li>
+                <li class="special-nav"><a href="#status">STATUS EN ALGÉRIE</a></li>
             </ul>
-        </div>
-    </header>
-    <section id="hero" class="hero" >
-        <div class="container d-flex flex-column justify-content-between"
-             data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-duration="800">
-            <div class="bg-container flex-grow-1 flex-md-grow-0" >
-                <img src="imgs/Ahmini%20logotype%20couleur.svg" alt="">
+            <div class="btn btn-burger align-self-center" onclick="openMobileMenu()"><img src="imgs/menu.svg" alt="">
             </div>
-            <h3 class="text-center flex-grow-1"> وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعاً</h3>
-        </div>
-    </section>
-    <section id="partners" class="partners">
-        <div class="container">
-            <p class="section-header-upper">Ils nous font confiance</p>
-            <h2 class="section-header">Autour de cette initiative</h2>
-            <div class="row">
-                <div class="col-md-6 col-sm-12" data-aos="fade-right" data-aos-anchor-placement="top-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur in turpis non vehicula. Nulla in consectetur ante, ut pulvinar tellus. Vestibulum vitae ex varius, varius felis non, consectetur dui. Phasellus finibus pretium lorem a laoreet. Curabitur scelerisque feugiat eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum viverra elit in blandit luctus. Phasellus imperdiet at ligula eget elementum. </p>
-                </div>
-                <div class="col-md-6 col-sm-12" data-aos="fade-left" data-aos-anchor-placement="top-center">
-                    <div class="row">
-                        <div class="col-6 p-3">
-                            <img src="imgs/FAP.png" alt="">
-                        </div>
-                        <div class="col-6 p-3">
-                            <img src="imgs/CNOP.png" alt="">
-                        </div>
-                        <div class="col-sm-4 col-6 p-2">
-                            <img src="imgs/sami.png" alt="">
-                        </div>
-                        <div class="col-sm-4 col-6 p-2">
-                            <img src="imgs/SAOM.png" alt="">
-                        </div>
-                        <div class="col-4 p-2">
-                            <img src="imgs/SNAPO.png" alt="">
-                        </div>
-                    </div>
-                </div>
+            <div class="btn btn-close align-self-center " onclick="closeMobileMenu()"><img src="imgs/close-btn.svg"
+                                                                                           alt=""></div>
+            <div class="mobile-menu closed-menu">
+                <ul class="d-flex flex-column align-items-center justify-content-around w-100">
+                    <li onclick="closeMobileMenu()"><a href="#partners">A PROPOS</a></li>
+                    <li onclick="closeMobileMenu()"><a href="#mission">MISSION</a></li>
+                    <li onclick="closeMobileMenu()"><a href="#map">STATUS</a></li>
+                    <li onclick="closeMobileMenu()"><a href="#symptoms">SYMPTOMES</a></li>
+                    <li onclick="closeMobileMenu()"><a href="#faq">FAQ</a></li>
+                </ul>
             </div>
-        </div>
-    </section>
-    <section id="mission" class="mission">
-        <div class="container">
-            <div class="mission-bg"><img src="imgs/virus-bg.svg" alt="corona virus floating" class=""></div>
-            <p class="section-header-upper">Qui somme nous</p>
-            <h2 class="section-header">Pourquoi A7mini</h2>
-            <div class="row">
-                <div class="col-md-4 mb-md-0 mb-4 col-xs-12" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                    <div class="mission-container">
-                        <h3>Mission</h3>
-                        <div class="mission-icon"><img src="imgs/shield.svg" width="100" alt=""></div>
-                        <p>Diminuant la surcharge de notre système de santé pour assurer une meilleure prise en charge et le rétablissement des patients les plus lourdement atteints. </p>
-                    </div>
+        </header>
+        <section id="hero" class="hero">
+            <div class="container d-flex flex-column justify-content-between"
+                 data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-duration="800">
+                <div class="bg-container flex-grow-1 flex-md-grow-0">
+                    <img src="imgs/Ahmini%20logotype%20couleur.svg" alt="">
                 </div>
-                <div class="col-md-4 mb-md-0 mb-4 col-xs-12" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-center">
-                    <div class="mission-container">
-                        <h3>Vision</h3>
-                        <div class="mission-icon"><img src="imgs/brain.svg" width="100" alt=""></div>
-                        <p>la protection des citoyens contre le virus SARS-CoV2.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-xs-12" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-center">
-                    <div class="mission-container">
-                        <h3>Objectif</h3>
-                        <div class="mission-icon"><img src="imgs/www.svg" width="100" alt=""></div>
+                <h3 class="text-center flex-grow-1"> وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعاً</h3>
+            </div>
+        </section>
+        <section id="partners" class="partners">
+            <div class="container">
+                <p class="section-header-upper">Ils nous font confiance</p>
+                <h2 class="section-header">Autour de cette initiative</h2>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12" data-aos="fade-right" data-aos-anchor-placement="top-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur in turpis non
                             vehicula. Nulla in consectetur ante, ut pulvinar tellus. Vestibulum vitae ex varius, varius
                             felis non, consectetur dui. Phasellus finibus pretium lorem a laoreet. Curabitur scelerisque
-                            feugiat el. </p>
+                            feugiat eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos. Vestibulum viverra elit in blandit luctus. Phasellus imperdiet at ligula
+                            eget elementum. </p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="status" class="status">
-        <div class="container">
-            <p class="section-header-upper">L'état</p>
-            <h2 class="section-header">Status Dans L'algérie</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-12 status-element">
-                    <img src="imgs/coronavirus.svg" width="100" alt="">
-                    <p class="status-number status-number-inf">800</p>
-                    <p class="status-text">Infectés</p>
-                </div>
-                <div class="col-md-4 col-sm-12 status-element">
-                    <img src="imgs/vaccine.svg" alt="">
-                    <p class="status-number status-number-ret">100</p>
-                    <p class="status-text">Rétablis</p>
-                </div>
-                <div class="col-md-4 col-sm-12 status-element">
-                    <img src="imgs/hospital-bed.svg" alt="">
-                    <p class="status-number status-number-dec">40</p>
-                    <p class="status-text">Décès</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="map" class="map">
-        <div class="container">
-            <p class="section-header-upper">Où est l'Algérie</p>
-            <h2 class="section-header">Statistiques</h2>
-            <h3 class="text-center">Cas d'infection par Wilaya</h3>
-            <div class="map-wrapper w-75 mx-auto" >
-                <div class="piktowrapper-embed"
-                     style="height: 300px;background-color: coral; width: 0px;position: relative;"
-                     data-uid="45276330-map-2">
-                    <div class="pikto-canvas-wrap" style="width: 200px;">
-                        <div class="pikto-canvas" style="width: 200px;">
-                            <div class="embed-loading-overlay"
-                                 style="width: 100%; height: 100%; position: absolute; text-align: center;">
-                                <img width="60px" alt="Loading..." style="margin-top: 100px"
-                                     src="https://create.piktochart.com/loading.gif"/>
-                                <p style="margin: 0; padding: 0; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 16px">
-                                    Loading...</p>
+                    <div class="col-md-6 col-sm-12" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                        <div class="row">
+                            <div class="col-6 p-3">
+                                <img src="imgs/FAP.png" alt="">
+                            </div>
+                            <div class="col-6 p-3">
+                                <img src="imgs/CNOP.png" alt="">
+                            </div>
+                            <div class="col-sm-4 col-6 p-2">
+                                <img src="imgs/sami.png" alt="">
+                            </div>
+                            <div class="col-sm-4 col-6 p-2">
+                                <img src="imgs/SAOM.png" alt="">
+                            </div>
+                            <div class="col-4 p-2">
+                                <img src="imgs/SNAPO.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <script>(function (d) {
+            </div>
+        </section>
+        <section id="mission" class="mission">
+            <div class="container">
+                <div class="mission-bg"><img src="imgs/virus-bg.svg" alt="corona virus floating" class=""></div>
+                <p class="section-header-upper">Qui somme nous</p>
+                <h2 class="section-header">Pourquoi A7mini</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-md-0 mb-4 col-xs-12" data-aos="fade-up"
+                         data-aos-anchor-placement="top-center">
+                        <div class="mission-container">
+                            <h3>Mission</h3>
+                            <div class="mission-icon"><img src="imgs/shield.svg" width="100" alt=""></div>
+                            <p>Diminuant la surcharge de notre système de santé pour assurer une meilleure prise en
+                                charge et le rétablissement des patients les plus lourdement atteints. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-4 col-xs-12" data-aos="fade-up" data-aos-delay="100"
+                         data-aos-anchor-placement="top-center">
+                        <div class="mission-container">
+                            <h3>Vision</h3>
+                            <div class="mission-icon"><img src="imgs/brain.svg" width="100" alt=""></div>
+                            <p>la protection des citoyens contre le virus SARS-CoV2.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12" data-aos="fade-up" data-aos-delay="200"
+                         data-aos-anchor-placement="top-center">
+                        <div class="mission-container">
+                            <h3>Objectif</h3>
+                            <div class="mission-icon"><img src="imgs/www.svg" width="100" alt=""></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur in turpis non
+                                vehicula. Nulla in consectetur ante, ut pulvinar tellus. Vestibulum vitae ex varius,
+                                varius
+                                felis non, consectetur dui. Phasellus finibus pretium lorem a laoreet. Curabitur
+                                scelerisque
+                                feugiat el. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="status" class="status">
+            <div class="container">
+                <p class="section-header-upper">L'état</p>
+                <h2 class="section-header">Status Dans L'algérie</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 status-element">
+                        <img src="imgs/coronavirus.svg" width="100" alt="">
+                        <p class="status-number status-number-inf">800</p>
+                        <p class="status-text">Infectés</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 status-element">
+                        <img src="imgs/vaccine.svg" alt="">
+                        <p class="status-number status-number-ret">100</p>
+                        <p class="status-text">Rétablis</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 status-element">
+                        <img src="imgs/hospital-bed.svg" alt="">
+                        <p class="status-number status-number-dec">40</p>
+                        <p class="status-text">Décès</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="map" class="map">
+            <div class="container">
+                <p class="section-header-upper">Où est l'Algérie</p>
+                <h2 class="section-header">Statistiques</h2>
+                <h3 class="text-center">Cas d'infection par Wilaya</h3>
+                <div class="map-wrapper w-75 mx-auto">
+                    <div class="piktowrapper-embed"
+                         style="height: 300px;background-color: coral; width: 0px;position: relative;"
+                         data-uid="45276330-map-2">
+                        <div class="pikto-canvas-wrap" style="width: 200px;">
+                            <div class="pikto-canvas" style="width: 200px;">
+                                <div class="embed-loading-overlay"
+                                     style="width: 100%; height: 100%; position: absolute; text-align: center;">
+                                    <img width="60px" alt="Loading..." style="margin-top: 100px"
+                                         src="https://create.piktochart.com/loading.gif"/>
+                                    <p style="margin: 0; padding: 0; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 16px">
+                                        Loading...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>(function (d) {
 
-                    var js, id = "pikto-embed-js", ref = d.getElementsByTagName("script")[0];
-                    if (d.getElementById(id)) {
-                        return;
-                    }
-                    js = d.createElement("script");
-                    js.id = id;
-                    js.async = true;
-                    js.src = "https://create.piktochart.com/assets/embedding/embed.js";
-                    ref.parentNode.insertBefore(js, ref);
-                }(document));</script>
+                        var js, id = "pikto-embed-js", ref = d.getElementsByTagName("script")[0];
+                        if (d.getElementById(id)) {
+                            return;
+                        }
+                        js = d.createElement("script");
+                        js.id = id;
+                        js.async = true;
+                        js.src = "https://create.piktochart.com/assets/embedding/embed.js";
+                        ref.parentNode.insertBefore(js, ref);
+                    }(document));</script>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-md-6 col-sm-12">
+                        <h3 class="text-center">Graphe des cas</h3>
+                        <div class="graph-wrapper">
+                            <div class="piktowrapper-embed" style="height: 300px; position: relative;"
+                                 data-uid="45355817-graphe-cas">
+                                <div class="pikto-canvas-wrap">
+                                    <div class="pikto-canvas">
+                                        <div class="embed-loading-overlay"
+                                             style="width: 100%; height: 100%; position: absolute; text-align: center;">
+                                            <img width="60px" alt="Loading..." style="margin-top: 100px"
+                                                 src="https://create.piktochart.com/loading.gif"/>
+                                            <p style="margin: 0; padding: 0; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 16px">
+                                                Loading...</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>(function (d) {
+                                var js, id = "pikto-embed-js", ref = d.getElementsByTagName("script")[0];
+                                if (d.getElementById(id)) {
+                                    return;
+                                }
+                                js = d.createElement("script");
+                                js.id = id;
+                                js.async = true;
+                                js.src = "https://create.piktochart.com/assets/embedding/embed.js";
+                                ref.parentNode.insertBefore(js, ref);
+                            }(document));</script>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h3 class="text-center">Graphe des décès</h3>
+                        <div class="graph-wrapper">
+                            <div class="piktowrapper-embed" style="height: 300px; position: relative;"
+                                 data-uid="45355859-graphe-deaths">
+                                <div class="pikto-canvas-wrap">
+                                    <div class="pikto-canvas">
+                                        <div class="embed-loading-overlay"
+                                             style="width: 100%; height: 100%; position: absolute; text-align: center;">
+                                            <img width="60px" alt="Loading..." style="margin-top: 100px"
+                                                 src="https://create.piktochart.com/loading.gif"/>
+                                            <p style="margin: 0; padding: 0; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 16px">
+                                                Loading...</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>(function (d) {
+                                var js, id = "pikto-embed-js", ref = d.getElementsByTagName("script")[0];
+                                if (d.getElementById(id)) {
+                                    return;
+                                }
+                                js = d.createElement("script");
+                                js.id = id;
+                                js.async = true;
+                                js.src = "https://create.piktochart.com/assets/embedding/embed.js";
+                                ref.parentNode.insertBefore(js, ref);
+                            }(document));</script>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row pt-3">
-                <div class="col-md-6 col-sm-12">
-                    <h3 class="text-center">Graphe des cas</h3>
-                    <div class="graph-wrapper">
-                        <div class="piktowrapper-embed" style="height: 300px; position: relative;" data-uid="45355817-graphe-cas"><div class="pikto-canvas-wrap"><div class="pikto-canvas"><div class="embed-loading-overlay" style="width: 100%; height: 100%; position: absolute; text-align: center;"><img width="60px" alt="Loading..." style="margin-top: 100px" src="https://create.piktochart.com/loading.gif"/><p style="margin: 0; padding: 0; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 16px">Loading...</p></div></div></div></div><script>(function(d){var js, id="pikto-embed-js", ref=d.getElementsByTagName("script")[0];if (d.getElementById(id)) { return;}js=d.createElement("script"); js.id=id; js.async=true;js.src="https://create.piktochart.com/assets/embedding/embed.js";ref.parentNode.insertBefore(js, ref);}(document));</script>
+        </section>
+        <section id="symptoms" class="symptoms">
+            <div class="container">
+                <p class="section-header-upper">Suis-je malade ?</p>
+                <h2 class="section-header">Symptomes du COVID-19</h2>
+                <div class="row">
+                    <div class="d-block d-md-none col-12 symptoms-text-mobile-wrapper">
+                        <div class="symptoms-text symptoms-text-mobile">
+                            <h3 class="symptoms-title">Les Premiers Jours</h3>
+                            <p class="symptoms-paragraph">La plupart ont de la fièvre. Le virus peut également provoquer
+                                des douleurs musculaires, de la fatigue, des étourdissements et même de la diarrhée. La
+                                plupart montrent des signes d’amélioration après 6 à 7 jours.</p>
+                            <button id="symptoms-test-btn-2" class="btn btn-primary">Se faire tester</button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <h3 class="text-center">Graphe des décès</h3>
-                    <div class="graph-wrapper">
-                        <div class="piktowrapper-embed" style="height: 300px; position: relative;" data-uid="45355859-graphe-deaths"><div class="pikto-canvas-wrap"><div class="pikto-canvas"><div class="embed-loading-overlay" style="width: 100%; height: 100%; position: absolute; text-align: center;"><img width="60px" alt="Loading..." style="margin-top: 100px" src="https://create.piktochart.com/loading.gif"/><p style="margin: 0; padding: 0; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 16px">Loading...</p></div></div></div></div><script>(function(d){var js, id="pikto-embed-js", ref=d.getElementsByTagName("script")[0];if (d.getElementById(id)) { return;}js=d.createElement("script"); js.id=id; js.async=true;js.src="https://create.piktochart.com/assets/embedding/embed.js";ref.parentNode.insertBefore(js, ref);}(document));</script>
+                    <div class="col-md-6 col-12 imgs-wrapper">
+                        <img id="symptoms-img-1" src="imgs/symptom_step1.png" alt="" class="w-100 symptoms-img">
+                        <img id="symptoms-img-2" src="imgs/symptom_step2.png" alt="" class="w-100 symptoms-img">
+                        <img id="symptoms-img-3" src="imgs/symptom_step3.png" alt="" class="w-100 symptoms-img">
+                        <img id="symptoms-img-4" src="imgs/symptom_step4.png" alt="" class="w-100 symptoms-img">
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="symptoms" class="symptoms">
-        <div class="container">
-            <p class="section-header-upper">Suis-je malade ?</p>
-            <h2 class="section-header">Symptomes du COVID-19</h2>
-            <div class="row">
-                <div class="d-block d-md-none col-12 symptoms-text-mobile-wrapper">
-                    <div class="symptoms-text symptoms-text-mobile">
-                        <h3 class="symptoms-title">Les Premiers Jours</h3>
-                        <p class="symptoms-paragraph">La plupart ont de la fièvre. Le virus peut également provoquer des douleurs musculaires, de la fatigue, des  étourdissements et même de la diarrhée. La plupart montrent des signes d’amélioration après 6 à 7 jours.</p>
-                        <button id="symptoms-test-btn-2" class="btn btn-primary">Se faire tester</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 imgs-wrapper">
-                    <img id="symptoms-img-1" src="imgs/symptom_step1.png" alt="" class="w-100 symptoms-img">
-                    <img id="symptoms-img-2" src="imgs/symptom_step2.png" alt="" class="w-100 symptoms-img">
-                    <img id="symptoms-img-3" src="imgs/symptom_step3.png" alt="" class="w-100 symptoms-img">
-                    <img id="symptoms-img-4" src="imgs/symptom_step4.png" alt="" class="w-100 symptoms-img">
-                </div>
-                <div class="d-none d-md-block col-md-6 col-sm-4">
-                    <div class="symptoms-text">
-                        <h3 class="symptoms-title">Les Premiers Jours</h3>
-                        <p class="symptoms-paragraph">La plupart ont de la fièvre. Le virus peut également provoquer des douleurs musculaires, de la fatigue, des  étourdissements et même de la diarrhée. La plupart montrent des signes d’amélioration après 6 à 7 jours.</p>
-                        <button id="symptoms-test-btn" class="btn btn-primary">Se faire tester</button>
+                    <div class="d-none d-md-block col-md-6 col-sm-4">
+                        <div class="symptoms-text">
+                            <h3 class="symptoms-title">Les Premiers Jours</h3>
+                            <p class="symptoms-paragraph">La plupart ont de la fièvre. Le virus peut également provoquer
+                                des douleurs musculaires, de la fatigue, des étourdissements et même de la diarrhée. La
+                                plupart montrent des signes d’amélioration après 6 à 7 jours.</p>
+                            <button id="symptoms-test-btn" class="btn btn-primary">Se faire tester</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="restrictions">
+        </section>
+        <section class="restrictions">
 
-    </section>
-    <!--<section class="recommendations">-->
+        </section>
+        <!--<section class="recommendations">-->
         <!--<div class="container">-->
-            <!--<div class="row">-->
-                <!--<div class="col-12 col-md-6 recommendation-element">-->
-                    <!--<img src="" alt="">-->
-                    <!--<p>Recommandation Pour Le Public</p>-->
-                <!--</div>-->
-                <!--<div class="col-12 col-md-6 recommendation-element">-->
-                    <!--<img src="" alt="">-->
-                    <!--<p>Recommandation Pour Les Professionnels De La Santé</p>-->
-                <!--</div>-->
-            <!--</div>-->
+        <!--<div class="row">-->
+        <!--<div class="col-12 col-md-6 recommendation-element">-->
+        <!--<img src="" alt="">-->
+        <!--<p>Recommandation Pour Le Public</p>-->
         <!--</div>-->
-    <!--</section>-->
-    <section id="faq">
-        <div class="container faq-container">
-            <h2 class="section-header text-center font-weight-bold">Questions Les Plus Fréquentes</h2>
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <div class="faq-question is-closed">
-                        <h3 class="faq-question-header">Qu'est-ce qu'un coronavirus?</h3>
-                        <div class="faq-question-icon">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
-                                 style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                    <g>
+        <!--<div class="col-12 col-md-6 recommendation-element">-->
+        <!--<img src="" alt="">-->
+        <!--<p>Recommandation Pour Les Professionnels De La Santé</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</section>-->
+        <section id="faq">
+            <div class="container faq-container">
+                <h2 class="section-header text-center font-weight-bold">Questions Les Plus Fréquentes</h2>
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="faq-question is-closed">
+                            <h3 class="faq-question-header">Qu'est-ce qu'un coronavirus?</h3>
+                            <div class="faq-question-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
+                                     style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                         <g>
-                                            <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
-                c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
-                c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z" />
+                                            <g>
+                                                <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
+                    c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
+                    c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z"/>
+                                            </g>
                                         </g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                </svg>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Les coronavirus sont des virus enveloppés à ARN simple Brin, ils appartiennent à la
+                                famille des coronaviridae ayant pour réservoir de nombreuses espèces mammifères et
+                                aviaires.
+                                <br>
+                                L’observation microscopique du virus montre des projections ancrées dans la membrane
+                                virale donnant au coronavirus son aspect de couronne. C’est cet aspect particulier qui
+                                est à l’origine du nom de ce virus.
+                                <br> <br>
+                                Les coronavirus humains (HCoV) sont à l’origine des syndromes respiratoires plus ou
+                                moins sévères. Selon la population étudiée. Le nouveau coronavirus (SARS-CoV-2) est une
+                                nouvelle souche récemment décrite comme responsable de la pathologie appelée SARS-CoV-2
+                                ou plus communément COVID-19.
+                            </p>
                         </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>
-                            Les coronavirus sont des virus enveloppés à ARN simple Brin, ils appartiennent à la famille des coronaviridae ayant pour réservoir de nombreuses espèces mammifères et aviaires.
+                    <div class="col-10">
+                        <div class="faq-question is-closed">
+                            <h3 class="faq-question-header">Comment se transmettent les Coronavirus émergeants ?</h3>
+                            <div class="faq-question-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
+                                     style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
+                    c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
+                    c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z"/>
+                                            </g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            Portes d’entrée du virus :
+                            <br/>
+                            •Par contact des muqueuses : yeux, nez, bouches avec des mains contaminées.
+                            <br/>
+                            •Par inhalation de gouttelettes/sécrétions d’un malade contaminé Transmission possible avant
+                            l’apparition des symptômes (Ganyani2020).
                             <br>
-                            L’observation microscopique du virus montre des projections ancrées dans la membrane virale  donnant au coronavirus son aspect de couronne. C’est cet aspect particulier qui est à l’origine du nom de ce virus.
-                            <br> <br>
-                            Les coronavirus humains (HCoV) sont à l’origine des syndromes respiratoires plus ou moins sévères. Selon la population étudiée. Le nouveau coronavirus (SARS-CoV-2) est une nouvelle souche récemment décrite comme responsable de la pathologie appelée SARS-CoV-2 ou plus communément COVID-19.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <div class="faq-question is-closed">
-                        <h3 class="faq-question-header">Comment se transmettent les Coronavirus émergeants ?</h3>
-                        <div class="faq-question-icon">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
-                                 style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                    <g>
-                                        <g>
-                                            <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
-                c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
-                c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z" />
-                                        </g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                </svg>
+                            Ce virus respiratoire se propage au contact d’une personne déjà infectée:
+                            <ol>
+                                <li>Par des mains contaminées ou des surfaces contaminées par le virus.</li>
+                                <li> Par l’intermédiaire de gouttelettes émises lors de la toux ou un éternument, le
+                                    risque de transmission est d’autant plus important que l’inoculum infectieux est
+                                    élevé.
+                                </li>
+                                <li>La transmission du virus par un sujet asymptomatique est très faible , en revanche
+                                    il est possible de contracter la COVID-19 en contact avec un patient peu
+                                    symptomatiques.
+                                </li>
+                                <li>Le risque de transmission par les matières fécales d’une personne infectée est
+                                    faible mais possible car les selles constituent une voie d’élimination du virus
+                                    (WANG 2020).
+                                </li>
+                                <li>Pas de cas de transmission transplacentaire identifié (Huijun Chen 2019)
+                                </li>
+                            </ol>
                         </div>
                     </div>
-                    <div class="faq-answer">
-                        Portes d’entrée du virus :
-                        <br/>
-                        •Par contact des muqueuses : yeux, nez, bouches avec des mains contaminées.
-                        <br/>
-                        •Par inhalation de gouttelettes/sécrétions d’un malade contaminé Transmission possible avant l’apparition des symptômes (Ganyani2020).
-                        <br>
-                        Ce virus respiratoire se propage au contact d’une personne déjà infectée:
-                        <ol>
-                            <li>Par des mains contaminées ou des surfaces contaminées par le virus.</li>
-                            <li> Par l’intermédiaire de gouttelettes émises lors de la toux ou un éternument, le risque de transmission est d’autant plus important que l’inoculum infectieux est élevé.
-                            </li>
-                            <li>La transmission du virus par un sujet asymptomatique est très faible , en revanche il est possible de contracter la COVID-19 en contact avec un patient peu symptomatiques.
-                            </li>
-                            <li>Le risque de transmission par les matières fécales d’une personne infectée est faible mais possible car les selles constituent une voie d’élimination du virus (WANG 2020).
-                            </li>
-                            <li>Pas de cas de transmission transplacentaire identifié (Huijun Chen 2019)
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <div class="faq-question is-closed">
-                        <h3 class="faq-question-header">Quels sont les sympotômes du COVID-19</h3>
-                        <div class="faq-question-icon">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
-                                 style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                    <g>
+                    <div class="col-10">
+                        <div class="faq-question is-closed">
+                            <h3 class="faq-question-header">Quels sont les sympotômes du COVID-19</h3>
+                            <div class="faq-question-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
+                                     style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                         <g>
-                                            <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
-                c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
-                c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z" />
+                                            <g>
+                                                <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
+                    c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
+                    c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z"/>
+                                            </g>
                                         </g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                </svg>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Les symptômes principaux sont : toux, une fièvre, myalgie et une dyspnée.
+                                <br>
+                                A noter que des signes particuliers ont été observés (source OMS) :<br>
+                                ANOSMIE BRUTAL : perte d’odorat sans obstruction nasale <br>
+                                AGUEUSIE/ DYSGUEUSIE : perte ou trouble du gout <br>
+                                HEMOPTYSIE : Des symptômes plus graves ont également été décrits dans ce contexte (16 à
+                                32%) comme la pneumonie ou le syndrome de détresse respiratoire aiguë (SDRA) qui sont
+                                présents majoritairement chez les personnes âgées, les patients présentant une
+                                immunodépression ou des comorbidités telles que le diabète, HTA , un cancer ou une
+                                maladie respiratoire chronique et aux moins deux femmes enceintes.
+                            </p>
                         </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>
-                            Les symptômes principaux sont : toux, une fièvre, myalgie et une dyspnée.
-                            <br>
-                            A noter que des signes particuliers ont été observés (source OMS) :<br>
-                            ANOSMIE BRUTAL : perte d’odorat sans obstruction nasale <br>
-                            AGUEUSIE/ DYSGUEUSIE : perte ou trouble du gout <br>
-                            HEMOPTYSIE : Des symptômes plus graves ont également été décrits dans ce contexte (16 à 32%) comme la pneumonie ou le syndrome de détresse respiratoire aiguë (SDRA) qui sont présents majoritairement chez les personnes âgées, les patients présentant une immunodépression ou des comorbidités telles que le diabète, HTA , un cancer ou une maladie respiratoire chronique et aux moins deux femmes enceintes.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <div class="faq-question is-closed">
-                        <h3 class="faq-question-header">Le virus circule dans l'air ?</h3>
-                        <div class="faq-question-icon">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
-                                 style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                    <g>
+                    <div class="col-10">
+                        <div class="faq-question is-closed">
+                            <h3 class="faq-question-header">Le virus circule dans l'air ?</h3>
+                            <div class="faq-question-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
+                                     style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                         <g>
-                                            <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
-                c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
-                c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z" />
+                                            <g>
+                                                <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
+                    c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
+                    c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z"/>
+                                            </g>
                                         </g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                </svg>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Une aérosolisation du virus est possible : Des aérosols = des petites gouttelettes de <5
+                                μm de diamètre contenant de virus qui restent dans l’air pendant des périodes prolongées
+                                mais le risque de transmission est très faible (van dromelan et al).
+                            </p>
                         </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>
-                            Une aérosolisation du virus est possible : Des aérosols = des petites gouttelettes de <5 μm de diamètre contenant de virus qui restent dans l’air pendant des périodes prolongées mais le risque de transmission est très faible (van dromelan et al).
-                        </p>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <div class="faq-question is-closed">
-                        <h3 class="faq-question-header">Les femmes enceintes sont-elles des personnes à risuqe ?</h3>
-                        <div class="faq-question-icon">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
-                                 style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                    <g>
+                    <div class="col-10">
+                        <div class="faq-question is-closed">
+                            <h3 class="faq-question-header">Les femmes enceintes sont-elles des personnes à risuqe
+                                ?</h3>
+                            <div class="faq-question-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
+                                     style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                         <g>
-                                            <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
-                c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
-                c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z" />
+                                            <g>
+                                                <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
+                    c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
+                    c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z"/>
+                                            </g>
                                         </g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                </svg>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Les femmes enceintes sont de manière générale des sujets fragiles et qui nécessitent une
+                                grande attention.
+                                <br>
+                                Les premières informations sur l’impact du coronavirus chez les femmes enceintes et le
+                                fœtus sont cependant rassurantes. Toutefois, par précaution, les femmes enceintes à
+                                partir du 3ème trimestre sont considérées comme personnes à risque. (Haute autorité de
+                                santé de France ).
+                            </p>
                         </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>
-                            Les femmes enceintes sont de manière générale des sujets fragiles et qui nécessitent une grande attention.
-                            <br>
-                            Les premières informations sur l’impact du coronavirus chez les femmes enceintes et le fœtus sont cependant rassurantes. Toutefois, par précaution, les femmes enceintes à partir du 3ème trimestre sont considérées comme personnes à risque. (Haute autorité de santé de France ).
-                        </p>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <div class="faq-question is-closed">
-                        <h3 class="faq-question-header">Les Personnes du groupe O sont mieux immunisées ?</h3>
-                        <div class="faq-question-icon">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
-                                 style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                    <g>
+                    <div class="col-10">
+                        <div class="faq-question is-closed">
+                            <h3 class="faq-question-header">Les Personnes du groupe O sont mieux immunisées ?</h3>
+                            <div class="faq-question-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
+                                     style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                         <g>
-                                            <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
-                c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
-                c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z" />
+                                            <g>
+                                                <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
+                    c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
+                    c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z"/>
+                                            </g>
                                         </g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                </svg>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Une étude chinoise a montré que les sujets de groupe O ont un risque d’infection de 33%
+                                moindre , en revanche les personnes de groupe A ont 20% de risque supplémentaire de
+                                développer l’infection : cette étude estime que les personnes de groupe 0 ont une double
+                                défense AC anti-A et AC anti B (Jiao Zhao 11/03/2020).
+                            </p>
                         </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>
-                            Une étude chinoise a montré que les sujets de groupe O ont un risque d’infection de 33% moindre , en revanche les personnes de groupe A ont 20% de risque supplémentaire de développer l’infection : cette étude estime que les personnes de groupe 0 ont une double défense AC anti-A et AC anti B (Jiao Zhao 11/03/2020).
-                        </p>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <div class="faq-question is-closed">
-                        <h3 class="faq-question-header">Est-ce-que les SARS-CoV-2 va disparaitre cet été (Effet Saisonnier) ?</h3>
-                        <div class="faq-question-icon">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
-                                 style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                    <g>
+                    <div class="col-10">
+                        <div class="faq-question is-closed">
+                            <h3 class="faq-question-header">Est-ce-que les SARS-CoV-2 va disparaitre cet été (Effet
+                                Saisonnier) ?</h3>
+                            <div class="faq-question-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
+                                     style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                         <g>
-                                            <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
-                c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
-                c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z" />
+                                            <g>
+                                                <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
+                    c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
+                    c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z"/>
+                                            </g>
                                         </g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                </svg>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Impossible de prédire , au vu du nombre d’infections enregistrées dans les pays du
+                                MoyenOrient, la température pourrait ne pas avoir d’effet sur le coronavirus.
+                                <br>
+                                Difficile pour le moment de tirer des conclusions fermes sur la dynamique virale du
+                                Sars-CoV2. Comme les cas augmentent de jour en jour à travers le monde, inutile de
+                                regarder quels sont les pays les plus touchés pour le moment et, en fonction de leur
+                                température, d’essayer de déduire les températures les plus propices à la dissémination
+                                du virus La saisonnalité du virus est liée à la proximité plus importante des personnes
+                                pendant l’hiver qu’en été .
+                            </p>
                         </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>
-                            Impossible de prédire , au vu du nombre d’infections enregistrées dans les pays du MoyenOrient, la température pourrait ne pas avoir d’effet sur le coronavirus.
-                            <br>
-                            Difficile pour le moment de tirer des conclusions fermes sur la dynamique virale du Sars-CoV2. Comme les cas augmentent de jour en jour à travers le monde, inutile de regarder quels sont les pays les plus touchés pour le moment et, en fonction de leur température, d’essayer de déduire les températures les plus propices à la dissémination du virus La saisonnalité du virus est liée à la proximité plus importante des personnes pendant l’hiver qu’en été .
-                        </p>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <div class="faq-question is-closed">
-                        <h3 class="faq-question-header">Comment traiter une infection au niveau Coronavirus ?</h3>
-                        <div class="faq-question-icon">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
-                                 style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                    <g>
+                    <div class="col-10">
+                        <div class="faq-question is-closed">
+                            <h3 class="faq-question-header">Comment traiter une infection au niveau Coronavirus ?</h3>
+                            <div class="faq-question-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512"
+                                     style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                         <g>
-                                            <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
-                c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
-                c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z" />
+                                            <g>
+                                                <path d="M509.121,372.083l-246.17-246.175c-3.684-3.684-10.209-3.684-13.893,0L2.878,372.083c-3.838,3.838-3.838,10.055,0,13.893
+                    c3.838,3.838,10.055,3.838,13.893,0l239.234-239.229l239.224,239.228c1.919,1.919,4.433,2.878,6.946,2.878
+                    c2.514,0,5.028-0.959,6.946-2.878C512.959,382.139,512.959,375.921,509.121,372.083z"/>
+                                            </g>
                                         </g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                <g>
-                                    </g>
-                                </svg>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    <g>
+                                        </g>
+                                    </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>
-                            Il n’existe actuellement aucun traitement ou vaccin pour traiter la maladie à coronavirus et COVID-19.
-                            <br>
+                        <div class="faq-answer">
+                            <p>
+                                Il n’existe actuellement aucun traitement ou vaccin pour traiter la maladie à
+                                coronavirus et COVID-19.
+                                <br>
 
-                            – Traitements symptomatiques (fièvre, toux, problèmes respiratoires avec la ventilation mécanique par ventilation )
-                            <br>
-                            – Antibiotiques contre les co-infections mais PAS EFFICACE CONTRE SRAS-CoV-2
-                            <br>
-                            – Des antiviraux (développés contre le SRAS ou MERS ou contre d’autres virus) en phase d’essais cliniques (en test) : ribavirine, lopinavir-ritonavir…
-                            <br>
-                            – Corticostéroïdes : pas d’effets thérapeutique prouvés
-                        </p>
+                                – Traitements symptomatiques (fièvre, toux, problèmes respiratoires avec la ventilation
+                                mécanique par ventilation )
+                                <br>
+                                – Antibiotiques contre les co-infections mais PAS EFFICACE CONTRE SRAS-CoV-2
+                                <br>
+                                – Des antiviraux (développés contre le SRAS ou MERS ou contre d’autres virus) en phase
+                                d’essais cliniques (en test) : ribavirine, lopinavir-ritonavir…
+                                <br>
+                                – Corticostéroïdes : pas d’effets thérapeutique prouvés
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="text-center w-100">Combatons le COVID-19</h2>
-                        <h3 class="text-center w-100">Rejoignez nous !</h3>
-                        <div class="links d-flex">
-                            <a id="facebook" href="https://www.facebook.com/A7miniCOVID19/">
-                                <img src="imgs/facebook.svg" alt="">
-                            </a>
-                            <a id="mail" href="">
-                                <img src="imgs/www2.svg" alt="">
-                            </a>
-                            <a id="twitter" href="https://twitter.com/A7miniCovid19">
-                                <img src="imgs/twitter.svg" alt="">
-                            </a>
+        </section>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <h2 class="text-center w-100">Combatons le COVID-19</h2>
+                            <h3 class="text-center w-100">Rejoignez nous !</h3>
+                            <div class="links d-flex">
+                                <a id="facebook" href="https://www.facebook.com/A7miniCOVID19/">
+                                    <img src="imgs/facebook.svg" alt="">
+                                </a>
+                                <a id="mail" href="">
+                                    <img src="imgs/www2.svg" alt="">
+                                </a>
+                                <a id="twitter" href="https://twitter.com/A7miniCovid19">
+                                    <img src="imgs/twitter.svg" alt="">
+                                </a>
+                            </div>
+                            <p class="pt-4 text-white"><b>a7mini@gmail.com</b></p>
                         </div>
-                        <p class="pt-4 text-white"><b>a7mini@gmail.com</b></p>
                     </div>
+                    <!--<div class="col-6">-->
+                    <!--<h3>Hello World !</h3>-->
+                    <!--</div>-->
                 </div>
-                <!--<div class="col-6">-->
-                <!--<h3>Hello World !</h3>-->
-                <!--</div>-->
             </div>
-        </div>
-        <p class="copyright w-100 text-center">&copy 2020 Fédération Algérienne de Pharmacie. Tous Droits Réservés.</p>
-    </footer>
-
+            <p class="copyright w-100 text-center">&copy 2020 Fédération Algérienne de Pharmacie. Tous Droits
+                Réservés.</p>
+        </footer>
+    </div>
     <!--<div style="height: 1000px;"></div>-->
 
     <!--Script-->
