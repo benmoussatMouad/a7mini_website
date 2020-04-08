@@ -11,6 +11,7 @@ window.addEventListener("scroll", () => {
 });
 
 
+
 // Mobile Menu Script
 function openMobileMenu() {
     var mobileMenu = document.getElementsByClassName("mobile-menu")[0];
