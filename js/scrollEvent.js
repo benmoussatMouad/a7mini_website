@@ -250,9 +250,11 @@ var CountUp = /** @class */ (function () {
 }());
 /*CountUp JS import END*/
 
-var statusNumbers = document.getElementsByClassName("status-number");
+var statusNumbers = document.getElementsByClassName("dz-status");
+var worldStatusNumbers = document.getElementsByClassName("world-status");
 
-var animate = true;
+var dzStatusAnimate = true;
+var worldStatusAnimate = true;
 
 
 /*****************************************
@@ -321,6 +323,7 @@ function changeSymptomsContent(e) {
 }
 /***************************************/
 var statusSection = document.getElementById("status");
+var worldStatusSection = document.getElementById("world-status");
 
 
 
@@ -343,13 +346,14 @@ window.onscroll = () => {
 
     // Activiating status numbers animation
     if (statusSection.getBoundingClientRect().top <= window.outerHeight) {
-        if (animate) {
+        if (dzStatusAnimate) {
             const easingFn = function (t, b, c, d) {
                 var ts = (t /= d) * t;
                 var tc = ts * t;
                 return b + c * (tc + -3 * ts + 3 * t);
-            }
+            };
             const options = {
+                separator: ',',
                 duration: 3,
                 easingFn,
             };
@@ -362,7 +366,31 @@ window.onscroll = () => {
                 }
             });
 
-            animate = false;
+            dzStatusAnimate = false;
+        }
+    }
+    if (worldStatusSection.getBoundingClientRect().top <= window.outerHeight) {
+        if (worldStatusAnimate) {
+            const easingFn = function (t, b, c, d) {
+                var ts = (t /= d) * t;
+                var tc = ts * t;
+                return b + c * (tc + -3 * ts + 3 * t);
+            };
+            const options = {
+                separator: ',',
+                duration: 3,
+                easingFn,
+            };
+            worldStatusNumbers.forEach(statusNumber => {
+                let demo = new CountUp(statusNumber, statusNumber.innerHTML, options);
+                if (!demo.error) {
+                    demo.start();
+                } else {
+                    console.error(demo.error);
+                }
+            });
+
+            worldStatusAnimate = false;
         }
     }
 };
