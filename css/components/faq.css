@@ -34,12 +34,13 @@
     padding: 7px 12px;
     margin-top: 10px;
     cursor: pointer;
+    background-color: #fff;
 }
 
 .faq-question-header{
     width: 100%;
     text-align: left;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     letter-spacing: 0;
     color: #42495B;
@@ -59,12 +60,13 @@
     border-bottom: 1px #42495B solid;
     overflow: hidden;
     transition: max-height .5s ease-in-out;
+    background-color: #ffffff;
 }
 
 .faq-answer > p{
     opacity: 1;
     padding: 30px;
-
+    font-size: 1.1rem;
 }
 
 .faq-answer  ol {

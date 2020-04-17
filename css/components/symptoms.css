@@ -6,7 +6,7 @@
 
 .symptoms-text-mobile-wrapper {
     position: absolute;
-    height: 400%;
+    /*height: 400%;*/
 }
 .symptoms .symptoms-text-mobile {
     background-color: #ffffff25;

@@ -57,7 +57,17 @@ header > ul li.special-nav {
     color: white;
     padding: 3px 5px;
     border-radius: 8px;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    -o-transition: background-color .2s;
+    transition: background-color .2s;
 }
+
+header > ul li.special-nav:hover {
+    background-color: #308656;
+}
+
 header ul li a {
     text-decoration: none;
     color: inherit;
@@ -149,7 +159,9 @@ header  .btn-close > img {
         display: block;
     }
 
-}@media screen and (min-width: 999px) {
+}
+
+@media screen and (min-width: 999px) {
     header  .mobile-menu {
         display: none;
     }

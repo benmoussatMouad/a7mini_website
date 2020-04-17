@@ -1,0 +1,9 @@
+section.video .video-container {
+    /*height: min-content;*/
+}
+section.video .video-container iframe {
+    width: 100%;
+    height: 500px;
+    border: 8px solid #44c27e;
+    border-radius: 8px;
+}

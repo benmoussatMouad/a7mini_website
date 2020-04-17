@@ -1,5 +1,5 @@
 section.status {
-    background-image: linear-gradient(to bottom, #e1ffe925 0%, #e1ffe9 50%, #e1ffe925 100% );
+    /*background-image: linear-gradient(to bottom, #e1ffe925 0%, #e1ffe9 50%, #e1ffe925 100% );*/
     padding-top: 30px;
     z-index: -2;
 }

@@ -15,7 +15,7 @@ html {
 
 }
 
-body {
+body#document { /*Specifying the ID since the imported grapj has a body tag within*/
     font-family: "Poppins", sans-serif;
     color: #5e5e5e;
     padding: 0;
