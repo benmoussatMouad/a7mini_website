@@ -1,0 +1,23 @@
+div.recommendations {
+    height: 100%;
+    padding-top: 20px;
+    overflow-y: scroll;
+}
+
+.recommendations details {
+    margin-bottom: 25px;
+}
+
+.recommendations details > summary {
+    list-style: none;
+    border-bottom: 2px solid #a9aea7;
+}
+
+.recommendations  details[open] summary ~ * {
+    animation: sweep 1s ease-in-out;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+}

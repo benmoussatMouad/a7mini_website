@@ -12,3 +12,6 @@
 @import "components/green-number.css";
 @import "components/partners.css";
 @import "components/recommendation.css";
+@import "components/restrictions.css";
+@import "components/recommendation_public/summary.css";
+@import "components/recommendation_public/recommendations.css";

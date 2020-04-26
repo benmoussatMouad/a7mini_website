@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height,     minimum-scale=1, initial-scale=1.0">
+
+    <script src="js/loader.js"></script>
+    <!--<script src="js/loader.js"></script>-->
+    <script src="js/countUp.js" type="module"></script>
+    <!--Imporing Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--Importing AOS.js Library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Impoting Fonts-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Rakkas|Tajawal&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Rakkas&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Importing Stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>A7mini - Recommendation Pour le Publique</title>
+</head>
+<body id="document">
+
+        <header id="header" class="header-recommendation d-flex flex-row justify-content-between align-content-center">
+            <div class="header-bg"></div>
+
+            <ul class="d-flex flex-sm-row align-items-center">
+                <li><a href="./index.html#faq">FAQ</a></li>
+                <li><a href="./index.html#symptoms">SYMPTOMES</a></li>
+                <li><a href="./index.html#mission">MISSION</a></li>
+                <li><a href="./index.html#partners">A PROPOS</a></li>
+                <li class="special-nav"><a href="./index.html#status">STATUS EN ALGÉRIE</a></li>
+            </ul>
+
+            <a href="./index.html" style="display: block;  "><img src="imgs/logo-compact.svg" alt="hackIT logo" class="logo"></a>
+
+            <ul class="d-flex flex-sm-row-reverse align-items-center text-arabic">
+                <li><a href="./index.html#faq">اسثلة</a></li>
+                <li><a href="./index.html#symptoms">أعراض</a></li>
+                <li><a href="./index.html#mission">مهمتنا</a></li>
+                <li><a href="./index.html#partners">ما أحمني</a></li>
+                <li class="special-nav"><a href="./index.html#status">الحال في الجزائر</a></li>
+            </ul>
+
+            <div class="btn btn-burger align-self-center" onclick="openMobileMenu()"><img src="imgs/menu.svg" alt="">
+            </div>
+            <div class="btn btn-close align-self-center " onclick="closeMobileMenu()"><img src="imgs/close-btn.svg" alt=""></div>
+            <div class="mobile-menu closed-menu">
+                <ul class="d-flex flex-column align-items-center justify-content-around w-100">
+                    <li onclick="closeMobileMenu()"><a href="#partners">A PROPOS</a></li>
+                    <li onclick="closeMobileMenu()"><a href="#mission">MISSION</a></li>
+                    <li onclick="closeMobileMenu()"><a href="#map">STATUS</a></li>
+                    <li onclick="closeMobileMenu()"><a href="#symptoms">SYMPTOMES</a></li>
+                    <li onclick="closeMobileMenu()"><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="content" class="content row" style="height: 90vh; height: calc(var(--vh, 1vh) * 90); width: 100%;">
+            <div class="summary col-2" >
+                <h4>Sommaire</h4>
+                <ol>
+                    <li>Comment minimiser la propagation ?</li>
+                    <li>Comment appliquer la quarantaine à la maison ?</li>
+                    <li>Comment gérer son stress pendant le confinement ?</li>
+                    <li>
+                        <details>
+                            <summary>Matériel de protection et hygiène</summary>
+                            <ul>
+                                <li>Consignes d'hygiène</li>
+                                <li>Les désinfectants efficaces et conduite à tenir</li>
+                                <li>Comment confectionner un masque en tissu?</li>
+                                <li>Comment porter convenablement son masque ?</li>
+                                <li>Réutiliser le masque, c'est possible ?</li>
+                                <li>Comment acheter un gel hydroalcolique sûr ?</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>Comment prendre soin d'un patient atteint de COVID-19 ?</li>
+                    <li>Automédication</li>
+                    <li>
+                        <details>
+                            <summary>Population à risque</summary>
+                            <ul>
+                                <li>Femme Ecnceinte et aillante</li>
+                                <li>Cancer et COVID</li>
+                                <li>Personnes ayant des maladies respiratoires</li>
+                                <li>Maladies chronoques (diabètes, hypertension artérielle)</li>
+                            </ul>
+                        </details>
+                    </li>
+                </ol>
+            </div>
+            <div class="recommendations col-10">
+                <h2 class="text-center mb-3">Recommendation pour le public</h2>
+                <details>
+                    <summary><h4 class="font-weight-normal">1. Comment minimiser la propagation</h4></summary>
+                    <p>Lorem Impum dolor sit amet</p>
+                </details>
+                <details>
+                    <summary><h4 class="font-weight-normal">2. Comment appliquer la quarantaine à la maison</h4></summary>
+                    <p>Lorem Impum dolor sit amet</p>
+                </details>
+                <details>
+                    <summary><h4 class="font-weight-normal">3. Comment gérer son stress pendant le confinement</h4></summary>
+                    <p>Lorem Impum dolor sit amet</p>
+                </details>
+                <details>
+                    <summary><h4 class="font-weight-normal">4. Materiél de protection et hygiène</h4></summary>
+                    <p>Lorem Impum dolor sit amet</p>
+                </details>
+                <details>
+                    <summary><h4 class="font-weight-normal">5. Comment prendre soin du patient atteint de COVID</h4></summary>
+                    <p>Lorem Impum dolor sit amet</p>
+                </details>
+                <details>
+                    <summary><h4 class="font-weight-normal">6. Automédication</h4></summary>
+                    <p>Lorem Impum dolor sit amet</p>
+                </details>
+                <details>
+                    <summary><h4 class="font-weight-normal">7. Population à risque</h4></summary>
+                    <img src="imgs/FEMME%20ENCEINTE%20ET%20ALLAITEMENT%20FR.svg" alt="">
+                </details>
+            </div>
+        </div>
+
+    <!--Script-->
+    <script src="js/scrollEvent.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
+</body>
+</html>

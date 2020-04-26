@@ -1,7 +1,9 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
-    /*height: 100vh;*/
+    height: 100vh;
+    padding: 0;
+    margin: 0px;
 }
 
 :root {
@@ -15,8 +17,13 @@ html {
 
 }
 
-body#document { /*Specifying the ID since the imported grapj has a body tag within*/
-    font-family: "Poppins", sans-serif;
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body#document { /*Specifying the ID since the imported graph has a body tag within*/
+    font-family: "Fira Sans", sans-serif;
     color: #5e5e5e;
     padding: 0;
     margin: 0;
@@ -28,10 +35,16 @@ body#document { /*Specifying the ID since the imported grapj has a body tag with
 
 #content-wrapper {
     /*height: 100vh;*/
+    height: 100%;
 }
+
+
 
 p {
     opacity: .7;
+}
+p > .text-arabic {
+    font-size: 1.3rem;
 }
 
 h1 {
@@ -40,6 +53,9 @@ h1 {
 h3 {
     font-size: 2rem;
 }
+h3 > .text-arabic {
+    font-size: 1.2em;
+}
 
 section {
     margin: 25px 0;
@@ -47,8 +63,11 @@ section {
 
 .section-header {
     font-size: 2.7rem;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 30px;
+}
+.section-header.text-arabic {
+    font-weight: 500;
 }
 
 .section-header-upper {
@@ -58,4 +77,13 @@ section {
     color: #02C084;
     margin: 0 0 10px;
     opacity: 1;
+}
+
+.section-header-upper.text-arabic {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.text-arabic {
+    font-family: "Tajawal", sans-serif;
 }
