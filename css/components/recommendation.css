@@ -42,6 +42,16 @@
     margin: auto;
 }
 
+.recommendation-element #Capa_2 {
+    width: 80%;
+    margin: 0 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
 .recommendation-element #Capa_1 path, .recommendation-element #Capa_2 path {
     fill: #000000;
     transition: fill .4s ease;
@@ -49,11 +59,15 @@
 
 .recommendation-element p {
     opacity: 1;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-decoration: none;
 }
 
 /*hover state*/
+
+.recommendation-element:hover {
+    background-color: rgba(68, 194, 126, 0.21);
+}
 
 .recommendation-element a:hover .img-wrapper {
     background-color: #44c07c;

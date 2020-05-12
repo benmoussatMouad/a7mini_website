@@ -1,8 +1,7 @@
 footer {
     background-image: linear-gradient(to bottom, #e7fff1 10%, #3aa56b 90%);
     height: 50vh;
-    padding: 50px 0;
-    padding-top: 100px;
+    padding: 5% 0 50px;
     margin-top: -100px;
     position: relative;
     z-index: 10;
@@ -14,6 +13,8 @@ footer h2 {
     font-size: 3rem;
     font-weight: 600;
 }
+
+
 
 
 
@@ -51,7 +52,7 @@ footer h2 {
 
 .links{
     width: 50%;
-    min-width: 400px;
+    min-width: 300px;
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -62,6 +63,20 @@ footer h2 {
     cursor: pointer;
     color: pink;
 }
+
+#youtube img {
+    width: 60px;
+}
+
+@media screen and (max-width: 400px) {
+    .links img {
+        width: 35px;
+    }
+    #youtube img {
+        width: 35px;
+    }
+}
+
 .copyright {
     display: inline;
     position: absolute;
@@ -86,4 +101,11 @@ footer h2 {
     /*.links  img{*/
         /*width: 30px;*/
     /*}*/
+}
+
+footer#about_footer {
+    margin-top: 50px;
+    color:white;
+    background-image: unset;
+    background-color: #3aa56b;
 }

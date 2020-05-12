@@ -1,3 +1,6 @@
+section.video {
+    margin: 100px 0;
+}
 section.video .video-container {
     /*height: min-content;*/
 }
@@ -6,4 +9,16 @@ section.video .video-container iframe {
     height: 500px;
     border: 8px solid #44c27e;
     border-radius: 8px;
+}
+
+@media screen and (max-width: 750px) {
+    section.video .video-container iframe {
+        height: 56.26vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.video {
+        margin: 50px 0;
+    }
 }

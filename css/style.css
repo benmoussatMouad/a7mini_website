@@ -15,3 +15,6 @@
 @import "components/restrictions.css";
 @import "components/recommendation_public/summary.css";
 @import "components/recommendation_public/recommendations.css";
+@import "components/question.css";
+@import "components/switch-button.css";
+@import "components/map.css";

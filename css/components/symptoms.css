@@ -11,6 +11,11 @@
 .symptoms .symptoms-text-mobile {
     background-color: #ffffff25;
     z-index: 1;
+    top: 35%;
+}
+.symptoms .symptoms-text-mobile-arabic {
+    background-color: #ffffff25;
+    z-index: 1;
     top: 15%;
 }
 @media screen and (max-width: 800px) {

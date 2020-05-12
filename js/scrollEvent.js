@@ -278,18 +278,42 @@ var symptomsContent = [{
 }
 ];
 
+var symptomsContentArabic = [{
+    title: ":في الأيام الأولى",
+    paragraph: "يعاني معظم المرضى من الحمى. يمكن للفيروس أيضا أن يسبب آلام في العضلات ، والتعب ، والدوخة وحتى الإسهال. يظهر على معظم المرضى علامات تحسن بعد 6 إلى 7 أيام.",
+}, {
+    title:  ":المراحل الأولى للمرض",
+    paragraph: "الأعراض الأكثر شيوعا هي : آلام الرّأس، السّعال الجاف، سيلان الأنف، و في حالة تطوّر المرض يمكن أن يتعرّض المريض لسعال ٍ مصحوبا بالبلغم أو حتى بالدم.",
+}, {
+    title: ":المضاعفات",
+    paragraph: "صعوبة في التنفّس مع / أو آلام في الصدر،و في الحالات الأكثر سوءا يظهر المريض فشلا رئويا حادّا أو ضيقا في التّنفس و الذي يحتاج إلى العلاج  بالأكسجين. هذه الأعراض تظهر غالباً في اليوم الخامس للمرض .",
+}, {
+    title: ":في بعض الحالات",
+    paragraph: "قد يسبب فيروس كورونا الفشل الكلوي وتشمل الأعراض أيضا كثرة الحاجة للذهاب الى المرحاض، وانتفاخ الأرجل و تحت العيون، ضغط الدم العالي مع / أو التعب و الوهن ."
+}
+];
+
+
 
 function changeSymptomsContent(e) {
     var arr = [].slice.call(symptomsImages);
     mobileTitle = document.getElementsByClassName("symptoms-title")[0];
     mobileParagraph = document.getElementsByClassName("symptoms-paragraph")[0];
+    mobileTitleArabic = document.getElementsByClassName("symptoms-title-arabic")[0];
+    mobileParagraphArabic = document.getElementsByClassName("symptoms-paragraph-arabic")[0];
     desktopTitle = document.getElementsByClassName("symptoms-title")[1];
+    desktopTitleArabic = document.getElementsByClassName("symptoms-title-arabic")[1];
     desktopParagraph = document.getElementsByClassName("symptoms-paragraph")[1];
+    desktopParagraphArabic = document.getElementsByClassName("symptoms-paragraph-arabic")[1];
 
     mobileTitle.innerHTML = symptomsContent[arr.indexOf(e)].title;
+    mobileTitleArabic.innerHTML = symptomsContentArabic[arr.indexOf(e)].title;
     mobileParagraph.innerHTML = symptomsContent[arr.indexOf(e)].paragraph;
+    mobileParagraphArabic.innerHTML = symptomsContentArabic[arr.indexOf(e)].paragraph;
     desktopTitle.innerHTML = symptomsContent[arr.indexOf(e)].title;
+    desktopTitleArabic.innerHTML = symptomsContentArabic[arr.indexOf(e)].title;
     desktopParagraph.innerHTML = symptomsContent[arr.indexOf(e)].paragraph;
+    desktopParagraphArabic.innerHTML = symptomsContentArabic[arr.indexOf(e)].paragraph;
 
     // Showing Button, or not
     var btn= document.getElementById("symptoms-test-btn");
