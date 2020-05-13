@@ -20,6 +20,9 @@ html {
 body {
     width: 100%;
     height: 100%;
+    font-family: "Fira Sans", sans-serif;
+    color: #5e5e5e;
+    overflow-x: hidden;
 }
 
 body#document { /*Specifying the ID since the imported graph has a body tag within*/
@@ -27,8 +30,7 @@ body#document { /*Specifying the ID since the imported graph has a body tag with
     color: #5e5e5e;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
+
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
 }

@@ -9,12 +9,13 @@ header {
     z-index: 2;
 }
 header.header-recommendation {
+    width: 100vw;
     position: relative;
     box-sizing: border-box;
     max-height: unset;
     height: 10vh;
     height: calc(var(--vh, 1vh) * 10);
-    border-bottom: 4px solid #44c27e;
+    /*border-bottom: 4px solid #44c27e;*/
 }
 header > a {
     z-index: 2;

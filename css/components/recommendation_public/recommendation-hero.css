@@ -1,0 +1,15 @@
+.recommendation-hero {
+    /*height: 90vh;*/
+    overflow: hidden;
+    /*width: 100vw;*/
+}
+
+.recommendation-hero .img-wrapper {
+    width: 30%;
+    margin: 2% auto;
+}
+
+.recommendation-hero .img-wrapper img {
+    width: 100%;
+}
+
