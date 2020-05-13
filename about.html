@@ -74,12 +74,13 @@
             </div>
             <div class="btn btn-close align-self-center " onclick="closeMobileMenu()"><img src="imgs/close-btn.svg" alt=""></div>
             <div class="mobile-menu closed-menu">
-                <ul class="d-flex flex-column align-items-center justify-content-around w-100">
-                    <li onclick="closeMobileMenu()"><a href="#partners">A PROPOS</a></li>
-                    <li onclick="closeMobileMenu()"><a href="#mission">MISSION</a></li>
-                    <li onclick="closeMobileMenu()"><a href="#map">STATUS</a></li>
-                    <li onclick="closeMobileMenu()"><a href="#symptoms">SYMPTOMES</a></li>
-                    <li onclick="closeMobileMenu()"><a href="#faq">FAQ</a></li>
+                <ul class="d-flex flex-column align-items-center justify-content-around w-100 text-center">
+                    <li onclick="closeMobileMenu()"><a href="./index.html#map">Statut <br> <span class="text-arabic ">الوضع في البلد</span></a></li>
+                    <li onclick="closeMobileMenu()"><a href="./index.html#symptoms">Symptomes <br>
+                        <span class="text-arabic ">أعراض</span></a></li>
+                    <li onclick="closeMobileMenu()"><a href="./index.html#symptoms">Recommendations <br>
+                        <span class="text-arabic ">ارشادات</span></a></li>
+                    <li onclick="closeMobileMenu()"><a href="./index.html#faq">Questions <br> <span class="text-arabic ">أسئلة</span></a></li>
                 </ul>
             </div>
         </header>
@@ -103,39 +104,53 @@
                     <h2 class="section-header w-50 text-right text-arabic">حول هذه المبادرة</h2>
                 </div>
                 <div class="row">
-                    <div class="slider">
+                    <div class="slider d-none d-md-flex">
                         <input id="slider1" type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
                         <input id="slider2" type="radio" name="slider" title="slide2" class="slider__nav"/>
                         <input id="slider3" type="radio" name="slider" title="slide3" class="slider__nav"/>
                         <input id="slider4" type="radio" name="slider" title="slide4" class="slider__nav"/>
                         <div class="slider__inner">
                             <div class="slider__contents">
-                                <div class="row w-100">
-                                    <div class="col-3"><img src="imgs/FAP.png" alt=""></div>
-                                    <div class="col-3"><img src="imgs/aaa.png" class="w-100" alt=""></div>
-                                    <div class="col-3"><img src="imgs/sami.png" alt=""></div>
-                                    <div class="col-3"><img src="imgs/SAOM.png" alt=""></div>
+                                <div class="row w-md-100">
+                                    <div class="col-12 col-md-3"><img src="imgs/FAP.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/aaa.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/sami.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/SAOM.png" alt=""></div>
                                 </div>
                             </div>
                             <div class="slider__contents">
                                 <div class="row w-100">
-                                    <div class="col-3"><img src="imgs/SNAPO.png" alt=""></div>
-                                    <div class="col-3"><img src="imgs/CNOP.png" alt=""></div>
-                                    <div class="col-3"><img src="imgs/medsa.jpg" alt=""></div>
-                                    <div class="col-3"><img src="imgs/sado.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/SNAPO.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/CNOP.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/medsa.jpg" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/sado.png" alt=""></div>
                                 </div>
                             </div>
                             <div class="slider__contents">
                                 <div class="row w-100">
-                                    <div class="col-3"><img src="imgs/sai.png" alt=""></div>
-                                    <div class="col-3"><img src="imgs/sapho.png" alt=""></div>
-                                    <div class="col-3"><img src="imgs/sss.jpg" alt=""></div>
-                                    <div class="col-3"><img src="imgs/safro.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/sai.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/sapho.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/sss.jpg" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/safro.png" alt=""></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <script src="js/slider.js"></script>
+                </div>
+                <div class="row mobile-imgs">
+                    <div class="col-6 col-sm-4"><img src="imgs/FAP.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/aaa.png" class="w-100" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/sami.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/SAOM.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/SNAPO.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/CNOP.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/medsa.jpg" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/sado.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/sai.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/sapho.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/sss.jpg" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/safro.png" class="w-100" alt=""></div>
                 </div>
             </div>
         </section>
