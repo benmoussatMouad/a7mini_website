@@ -52,28 +52,39 @@ footer h2 {
 
 .links{
     width: 50%;
-    min-width: 300px;
+    min-width: 400px;
+    height: 70px;
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
     margin-top: 50px;
 }
+
+
+.links a {
+    display: block;
+    height: min-content;
+}
 .links  img {
-    width: 50px;
+    height:  50px;
     cursor: pointer;
     color: pink;
 }
 
 #youtube img {
-    width: 60px;
+    height: 67px;
 }
 
 @media screen and (max-width: 400px) {
     .links img {
-        width: 35px;
+        height:  35px;
     }
     #youtube img {
-        width: 35px;
+        height: 45px;
+    }
+
+    .links {
+        min-width: 300px;
     }
 }
 
@@ -86,6 +97,10 @@ footer h2 {
     bottom: 5px;
     z-index: 3;
     opacity: 1;
+}@media screen and (max-width: 400px) {
+    .copyright {
+        font-size: 0.8rem;
+    }
 }
 
 @media only screen and (max-width:764px){
@@ -106,6 +121,7 @@ footer h2 {
 footer#about_footer {
     margin-top: 50px;
     color:white;
+    z-index: 0;
     background-image: unset;
     background-color: #3aa56b;
 }

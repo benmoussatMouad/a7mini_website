@@ -251,7 +251,9 @@ var CountUp = /** @class */ (function () {
 /*CountUp JS import END*/
 
 var statusNumbers = document.getElementsByClassName("dz-status");
+var statusNumbersArray = [].slice.call(status);
 var worldStatusNumbers = document.getElementsByClassName("world-status");
+var worldStatusNumbersArray = [].slice.call(worldStatusNumbers);
 
 var dzStatusAnimate = true;
 var worldStatusAnimate = true;
@@ -262,6 +264,7 @@ var worldStatusAnimate = true;
  */
 /*Symptoms Section Scrollevent handling */
 var symptomsImages = document.getElementsByClassName("symptoms-img");
+var symptomsImagesArray = [].slice.call(symptomsImages);
 
 var symptomsContent = [{
     title: "Les premiers jours :",
@@ -292,7 +295,6 @@ var symptomsContentArabic = [{
     paragraph: "قد يسبب فيروس كورونا الفشل الكلوي وتشمل الأعراض أيضا كثرة الحاجة للذهاب الى المرحاض، وانتفاخ الأرجل و تحت العيون، ضغط الدم العالي مع / أو التعب و الوهن ."
 }
 ];
-
 
 
 function changeSymptomsContent(e) {
@@ -345,6 +347,9 @@ function changeSymptomsContent(e) {
     }
 
 }
+
+
+
 /***************************************/
 var statusSection = document.getElementById("status");
 var worldStatusSection = document.getElementById("world-status");
@@ -352,7 +357,7 @@ var worldStatusSection = document.getElementById("world-status");
 
 
 window.onscroll = () => {
-    symptomsImages.forEach(image => {
+    symptomsImagesArray.forEach(image => {
         if (image.getBoundingClientRect().top <= window.outerHeight/2 && 0 <= image.getBoundingClientRect().top) {
             image.style.opacity = 1;
                 changeSymptomsContent(image);
@@ -381,7 +386,7 @@ window.onscroll = () => {
                 duration: 5,
                 easingFn,
             };
-            statusNumbers.forEach(statusNumber => {
+            statusNumbersArray.forEach(statusNumber => {
                 let demo = new CountUp(statusNumber, statusNumber.innerHTML, options);
                 if (!demo.error) {
                     demo.start();
@@ -405,7 +410,7 @@ window.onscroll = () => {
                 duration: 6,
                 easingFn,
             };
-            worldStatusNumbers.forEach(statusNumber => {
+            worldStatusNumbersArray.forEach(statusNumber => {
                 let demo = new CountUp(statusNumber, statusNumber.innerHTML, options);
                 if (!demo.error) {
                     demo.start();

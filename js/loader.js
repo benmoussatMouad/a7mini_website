@@ -19,6 +19,7 @@ window.onload = function () {
     content.style.opacity = "1";
     loader.style.opacity = 0;
     setTimeout(() => {
+            AOS.init();
             loader.parentNode.removeChild(loader);
             body.style.overflowY = "scroll";
         },
