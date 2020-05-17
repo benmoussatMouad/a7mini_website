@@ -251,7 +251,7 @@ var CountUp = /** @class */ (function () {
 /*CountUp JS import END*/
 
 var statusNumbers = document.getElementsByClassName("dz-status");
-var statusNumbersArray = [].slice.call(status);
+var statusNumbersArray = [].slice.call(statusNumbers);
 var worldStatusNumbers = document.getElementsByClassName("world-status");
 var worldStatusNumbersArray = [].slice.call(worldStatusNumbers);
 
@@ -383,10 +383,11 @@ window.onscroll = () => {
             };
             const options = {
                 separator: ',',
-                duration: 5,
+                duration: 8,
                 easingFn,
             };
             statusNumbersArray.forEach(statusNumber => {
+                console.log("debug");
                 let demo = new CountUp(statusNumber, statusNumber.innerHTML, options);
                 if (!demo.error) {
                     demo.start();

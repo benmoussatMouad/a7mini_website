@@ -21,7 +21,7 @@ header > a {
     z-index: 2;
 }
 
-header img.logo {
+header img.logo, header img.logo-main-page   {
     z-index: 2;
     width: 100px;
 }
@@ -156,7 +156,7 @@ header .btn-burger {
     z-index: 3;
     height: 30px;
     position: absolute;
-    right: 25px;
+    right: 45px;
 }
 
 header  .btn-burger > img {

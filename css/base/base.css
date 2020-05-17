@@ -27,7 +27,7 @@ body {
 
 body#document { /*Specifying the ID since the imported graph has a body tag within*/
     font-family: "Fira Sans", sans-serif;
-    color: #5e5e5e;
+    color: #0e0e0e;
     padding: 0;
     margin: 0;
     overflow-y: hidden;
@@ -43,7 +43,7 @@ body#document { /*Specifying the ID since the imported graph has a body tag with
 
 
 p {
-    opacity: .7;
+    opacity: 1;
 }
 p > .text-arabic {
     font-size: 1.3rem;
@@ -75,7 +75,7 @@ section {
 
 
 .section-header-upper {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     font-family: Poppins, sans-serif;
     color: #02C084;
@@ -84,7 +84,7 @@ section {
 }
 
 .section-header-upper.text-arabic {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -135,3 +135,19 @@ section {
     background-color: #44c07c !important;
     color: white;
 }
+
+/*   Rules for arabic font changing   */
+.text-arabic {
+    font-family: "Cairo", sans-serif;
+}
+.section-header-upper.text-arabic {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+p > .text-arabic {
+    font-size: inherit;
+}
+h3 > .text-arabic {
+    font-size: 2rem;
+}
+

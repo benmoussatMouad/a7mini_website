@@ -1,5 +1,5 @@
 var header = document.querySelector("header");
-var logo = header.getElementsByClassName("logo")[0];
+var logo = header.getElementsByClassName("logo-main-page")[0];
 var headerBg = header.getElementsByClassName("header-bg")[0];
 var hero = document.getElementsByClassName("hero")[0];
 headerBg.style.opacity = 0 ;
