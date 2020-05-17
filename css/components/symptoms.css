@@ -7,16 +7,15 @@
 .symptoms-text-mobile-wrapper {
     position: absolute;
     /*height: 400%;*/
+    z-index: 2;
 }
 .symptoms .symptoms-text-mobile {
 
     background-color: #ffffff25;
-    z-index: 1;
     top: 35%;
 }
 .symptoms .symptoms-text-mobile-arabic {
     background-color: #ffffff25;
-    z-index: 1;
     top: 15%;
 }
 @media screen and (max-width: 800px) {
