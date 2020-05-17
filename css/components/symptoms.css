@@ -7,7 +7,7 @@
 .symptoms-text-mobile-wrapper {
     position: absolute;
     /*height: 400%;*/
-    z-index: 2;
+    z-index: 1;
 }
 .symptoms .symptoms-text-mobile {
 

@@ -3,6 +3,13 @@
     overflow: hidden;
     /*width: 100vw;*/
     color: #202020;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .recommendation-hero h1 {
+        font-size: 2.7rem;
+    }
 }
 
 .recommendation-hero .img-wrapper {

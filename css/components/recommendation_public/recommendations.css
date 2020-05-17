@@ -30,13 +30,14 @@ div.recommendations {
     margin-bottom: 25px;
 }
 .recommendation .recommendation-title {
-    z-index: 10;
+    z-index: 2;
     position: relative;
     background-color: #50c273;
     padding: 10px 25px;
     margin: 0 30px -30px;
     color: white;
     border-radius: 12px;
+    min-width: 300px;
 
     -webkit-box-shadow: 3px 1px 25px #aeaeae;
     -moz-box-shadow: 3px 1px 25px #aeaeae;
@@ -49,6 +50,8 @@ div.recommendations {
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
+
+
 
 .recommendations .recommendation-title:hover {
     background-color: #a0e5a5;
@@ -79,4 +82,10 @@ div.recommendations {
 
 .recommendation-content h4 {
     color: #44c27e;
+}
+
+@media screen and (max-width: 400px) {
+    .recommendation .recommendation-title {
+        margin: 0 0px -30px;
+    }
 }
