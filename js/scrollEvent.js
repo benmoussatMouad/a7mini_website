@@ -299,6 +299,7 @@ var symptomsContentArabic = [{
 
 function changeSymptomsContent(e) {
     var arr = [].slice.call(symptomsImages);
+
     mobileTitle = document.getElementsByClassName("symptoms-title")[0];
     mobileParagraph = document.getElementsByClassName("symptoms-paragraph")[0];
     mobileTitleArabic = document.getElementsByClassName("symptoms-title-arabic")[0];
@@ -363,7 +364,7 @@ window.onscroll = () => {
                 changeSymptomsContent(image);
         } else {
             image.style.opacity = 0;
-            if (image.id == "symptoms-img-4" && (image.getBoundingClientRect().bottom <= window.outerHeight / 2 || image.getBoundingClientRect().top <= 0)) {
+            if (image.id === "symptoms-img-4" && (image.getBoundingClientRect().bottom <= window.outerHeight / 2 || image.getBoundingClientRect().top <= 0)) {
                 image.style.opacity = 1;
             }
         }

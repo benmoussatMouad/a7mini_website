@@ -9,6 +9,7 @@
     /*height: 400%;*/
 }
 .symptoms .symptoms-text-mobile {
+
     background-color: #ffffff25;
     z-index: 1;
     top: 35%;
@@ -21,6 +22,7 @@
 @media screen and (max-width: 800px) {
     .symptoms .imgs-wrapper {
         padding-top: 20%;
+        z-index: 0;
     }
 }
 
@@ -32,6 +34,8 @@
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     /*margin-bottom: 30px;*/
+    z-index: 0;
+    position: relative;
 }
 
 .symptoms .symptoms-text .btn-primary {

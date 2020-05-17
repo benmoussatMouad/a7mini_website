@@ -2,7 +2,9 @@ var mobileTextWrapper = document.getElementsByClassName("symptoms-text-mobile-wr
 
 var imageInMobile = document.getElementById("symptoms-img-1");
 
-mobileTextWrapper.style.height = (imageInMobile.offsetHeight * 4) + "px";
+imageInMobile.onload = () => {
+    mobileTextWrapper.style.height = (imageInMobile.offsetHeight * 4) + "px";
+};
 
 window.onresize = () => {
     mobileTextWrapper.style.height = (imageInMobile.offsetHeight * 4) + "px";
