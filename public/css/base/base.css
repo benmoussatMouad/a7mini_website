@@ -88,9 +88,6 @@ section {
     font-weight: 400;
 }
 
-.text-arabic {
-    font-family: "Tajawal", sans-serif;
-}
 
 @media screen and (max-width: 800px) {
     .section-header {
@@ -149,6 +146,10 @@ p > .text-arabic {
 }
 h3 > .text-arabic {
     font-size: 2rem;
+}
+
+h5.text-arabic {
+    font-weight: 600 !important;
 }
 
 section {
