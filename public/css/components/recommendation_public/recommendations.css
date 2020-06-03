@@ -1,0 +1,91 @@
+@import "recommendation-1.css";
+
+div.recommendations {
+    /*height: 100%;*/
+    padding-top: 20px;
+    /*overflow-y: scroll;*/
+}
+
+
+.recommendations details {
+    margin-bottom: 25px;
+}
+
+.recommendations details > summary {
+    list-style: none;
+    border-bottom: 2px solid #a9aea7;
+}
+
+.recommendations  details[open] summary ~ * {
+    animation: sweep 1s ease-in-out;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+}
+
+/* Recommendation element Stylesheet */
+.recommendation {
+    margin-bottom: 25px;
+}
+.recommendation .recommendation-title {
+    z-index: 2;
+    position: relative;
+    background-color: #50c273;
+    padding: 10px 25px;
+    margin: 0 30px -30px;
+    color: white;
+    border-radius: 12px;
+    min-width: 300px;
+
+    -webkit-box-shadow: 3px 1px 25px #aeaeae;
+    -moz-box-shadow: 3px 1px 25px #aeaeae;
+    box-shadow: 3px 1px 25px #aeaeae;
+    cursor: pointer;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
+
+.recommendations .recommendation-title:hover {
+    background-color: #a0e5a5;
+    color: #555555;
+}
+
+.recommendation-content     {
+    position: relative;
+    z-index: -1;
+    margin:  0 5%;
+    padding: 0 25px;
+    padding-top: 25px;
+    border: 2px solid #a9aea7;
+    border-top: none;
+    border-radius: 28px ;
+
+    -webkit-box-shadow: 3px 1px 25px #aeaeae;
+    -moz-box-shadow: 3px 1px 25px #aeaeae;
+    box-shadow: 3px 1px 25px #aeaeae;
+
+    overflow-y: hidden;
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
+}
+
+.recommendation-content h4 {
+    color: #44c27e;
+}
+
+@media screen and (max-width: 400px) {
+    .recommendation .recommendation-title {
+        margin: 0 0px -30px;
+    }
+}
