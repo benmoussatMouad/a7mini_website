@@ -20,11 +20,10 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), {maxAge: 60 * 60 * 24}));
 
 app.use('/', indexRouter);
 app.use('/getData', dataRouter);
-
 app.get("/google-spreadsheet", async function(req, res){
 
     // Identifying which document we'll be accessing/reading from

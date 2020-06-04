@@ -386,7 +386,7 @@ window.onscroll = () => {
             };
             const options = {
                 separator: ',',
-                duration: 3,
+                duration: 5,
                 easingFn,
             };
             statusNumbersArray.forEach(statusNumber => {
@@ -411,7 +411,7 @@ window.onscroll = () => {
             };
             const options = {
                 separator: ',',
-                duration: 3,
+                duration: 5,
                 easingFn,
             };
             worldStatusNumbersArray.forEach(statusNumber => {

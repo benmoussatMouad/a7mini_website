@@ -4,7 +4,7 @@ let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 //Getting render data from sheet
-var request = new XMLHttpRequest();
+const request = new XMLHttpRequest();
 request.open("GET", '/getData', false);
 request.send(null);
 const response = request.responseText;
