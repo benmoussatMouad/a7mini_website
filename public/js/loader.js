@@ -28,7 +28,8 @@ window.onresize = function () {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 };
 
-window.onload = function () {
+
+function loadHeroImage() {
     var loader = document.getElementById("loader");
     var content = document.getElementById("content-wrapper");
     var body = document.getElementById("document");
@@ -41,4 +42,4 @@ window.onload = function () {
             body.style.overflowY = "scroll";
         },
         2000);
-};
+}

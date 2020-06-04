@@ -91,10 +91,10 @@
         </header>
 
         <section id="hero" class="hero">
-            <div class="container d-flex flex-column justify-content-between"
+            <div class="container d-flex flex-column justify-content-around"
                  data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-duration="800">
-                <div class="bg-container flex-grow-1 flex-md-grow-0">
-                    <img src="/imgs/Ahmini-logotype-01.svg" alt="">
+                <div class="bg-container flex-grow-0 flex-md-grow-0">
+                    <img id="hero-image" onload="loadHeroImage()" src="/imgs/Ahmini-logotype-01.svg" alt="">
                 </div>
                 <h3 class="text-center "> وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعاً</h3>
             </div>
@@ -172,7 +172,7 @@
                     <div class="col-12">
                         <h3 class="text-center">Nombre des cas | <span class="text-arabic">عدد الحالات</span></h3>
                         <div class="graph-wrapper">
-                            <iframe style="width:100%" width="560" height="391" src="https://coronavirus.app/chart/AwN0CScPDApcLFgz6e3z/infected?embed=true"
+                            <iframe style="width:100%" src="https://coronavirus.app/chart/AwN0CScPDApcLFgz6e3z/infected?embed=true"
                                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>

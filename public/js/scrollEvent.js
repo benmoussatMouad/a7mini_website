@@ -415,7 +415,7 @@ window.onscroll = () => {
                 easingFn,
             };
             worldStatusNumbersArray.forEach(statusNumber => {
-                let demo = new CountUp(statusNumber, statusNumber.innerHTML, options);
+               let demo = new CountUp(statusNumber, statusNumber.innerHTML, options);
                 if (!demo.error) {
                     demo.start();
                 } else {
