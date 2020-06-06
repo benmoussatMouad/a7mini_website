@@ -17,12 +17,13 @@
     <!--Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
     <!--Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
     <!--Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+    <link rel="stylesheet" type="text/css" href="css/components/map.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0">
 
-    <script src="/js/loader.js"></script>
-    <!--<script src="js/loader.js"></script>-->
     <script src="/js/countUp.js" type="module"></script>
+    <script src="/js/loader.js"></script>
+
     <!--Imporing Bootstrap-->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -163,16 +164,27 @@
                 </div>
                 <h3 class="text-center"
                     data-aos="fade-up" data-aos-anchor-placement="top-center" >Carte épidémiologique | <span class="text-arabic">خريطة وبائية</span></h3>
-                <div class="map-wrapper w-75 mx-auto"
+                <div class="map-wrapper w-75 mx-auto "
                      data-aos="fade-up" data-aos-anchor-placement="top-center" >
-                    <iframe width="800" height="870" frameborder="0"scrolling="no" style="overflow-y:hidden;" src="https://create.piktochart.com/embed/46048991-cartographie" ></iframe>
+
+                    <div class="piktowrapper-embed" style="height: 300px; position: relative;" data-uid="46048991-cartographie"><div class="pikto-canvas-wrap"><div class="pikto-canvas"><div class="embed-loading-overlay" style="width: 100%; height: 100%; position: absolute; text-align: center;"><img width="60px" alt="Loading..." style="margin-top: 100px" src="https://create.piktochart.com/loading.gif"/><p style="margin: 0; padding: 0; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 16px">Loading...</p></div></div></div></div><script>(function (d) {
+                    var js, id = "pikto-embed-js", ref = d.getElementsByTagName("script")[0];
+                    if (d.getElementById(id)) {
+                        return;
+                    }
+                    js = d.createElement("script");
+                    js.id = id;
+                    js.async = true;
+                    js.src = "https://create.piktochart.com/assets/embedding/embed.js";
+                    ref.parentNode.insertBefore(js, ref);
+                }(document));</script>
                 </div>
                 <div class="row pt-3"
                      data-aos="fade-up" data-aos-anchor-placement="top-center" >
                     <div class="col-12">
                         <h3 class="text-center">Nombre des cas | <span class="text-arabic">عدد الحالات</span></h3>
                         <div class="graph-wrapper">
-                            <iframe style="width:100%" src="https://coronavirus.app/chart/AwN0CScPDApcLFgz6e3z/infected?embed=true"
+                            <iframe style="width:100%" height="400px" src="https://coronavirus.app/chart/AwN0CScPDApcLFgz6e3z/infected?embed=true"
                                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -796,8 +808,6 @@
     <script src="/js/scrollEvent.js"></script>
     <script src="/js/symptoms.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // AOS.init()
-    </script>
+
 </body>
 </html>

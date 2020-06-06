@@ -3,3 +3,8 @@
         font-size: 1.7rem;
     }
 }
+
+.map-wrapper {
+    overflow-x: -moz-scrollbars-none;
+    overflow-y: hidden;
+}
