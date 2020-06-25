@@ -50,6 +50,11 @@ div.recommendations {
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
+@media screen and (max-width: 400px){
+    .recommendation-title {
+        padding: 10px 5px;
+    }
+}
 
 
 
@@ -78,6 +83,12 @@ div.recommendations {
     -o-transition: max-height 1s;
     transition: max-height 1s;
 }
+@media screen and (max-width: 800px) {
+    .recommendation-content {
+        padding: 25px 0 0;
+    }
+}
+
 
 .recommendation-content h4 {
     color: #44c27e;
@@ -87,4 +98,26 @@ div.recommendations {
     .recommendation .recommendation-title {
         margin: 0 0px -30px;
     }
+}
+
+.automed-img {
+    width: 50px;
+}
+
+.recommendation-overflow-img {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .recommendation-overflow-img {
+        overflow-x: scroll;
+    }
+}
+
+
+.recommendation .conseil {
+    background-color: rgba(154, 218, 101, 0.57);
+    margin: 2% 0;
+    padding: 2%;
+    border-radius: 15px;
 }
