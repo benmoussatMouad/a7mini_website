@@ -13,6 +13,7 @@ var fs              = require('fs'),
 // Defining our application routes
 var indexRouter = require('./routes/index');
 var dataRouter = require('./routes/getData');
+const {GoogleSpreadsheet} = require("google-spreadsheet");
 
 var app = express();
 
