@@ -24,6 +24,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'), {maxAge: 60 * 60 * 24}));
 
 app.use('/', indexRouter);
+//adding this for the sole purpose of testing with Cpanel
+    app.use('/a7mini', indexRouter);
 app.use('/getData', dataRouter);
 app.get("/google-spreadsheet", async function(req, res){
 
