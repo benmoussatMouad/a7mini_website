@@ -22,7 +22,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '/public'), {maxAge: 60 * 60 * 24}));
+app.use(express.static(path.join(__dirname, './public'), {maxAge: 60 * 60 * 24}));
 
 app.use('/', indexRouter);
 //adding this for the sole purpose of testing with Cpanel
