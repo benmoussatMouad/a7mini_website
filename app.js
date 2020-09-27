@@ -44,6 +44,7 @@ app.get("/google-spreadsheet", async function(req, res){
     const rows = await sheet.getRows();
     res.send(rows[0].worldDeaths);
 });
-app.use(express.static(path.join(__dirname, 'public'), {maxAge: 60 * 60 * 24}));
+
+app.use(express.static('../public'));
 
 module.exports = app;
