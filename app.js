@@ -45,7 +45,7 @@ app.get("/google-spreadsheet", async function(req, res){
     res.send(rows[0].worldDeaths);
 });
 
-app.use(express.static(path.resolve(__dirname, 'public')));
+// app.use(express.static(path.resolve(__dirname, 'public')));
 
 
 
