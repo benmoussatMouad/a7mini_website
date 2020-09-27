@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.sendFile('public/index.html', {root: '/'});
+  console.log("HELLO");
+  res.send(__dirname);;
 });
 
 module.exports = router;
