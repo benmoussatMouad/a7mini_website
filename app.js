@@ -45,6 +45,11 @@ app.get("/google-spreadsheet", async function(req, res){
     res.send(rows[0].worldDeaths);
 });
 
-app.use(express.static('../public'));
+if (__dirname.slice(-7) === '/public') { // For production
+    app.use(express.static(__dirname))
+} else { // For development
+    app.use(express.static(__dirname + '/public'))
+}
+
 
 module.exports = app;
