@@ -45,7 +45,8 @@ app.get("/google-spreadsheet", async function(req, res){
     res.send(rows[0].worldDeaths);
 });
 
-app.use(express.static('/home/tagduedx/repositories/a7mini/public'));
+app.use(express.static(path.resolve(__dirname, 'public')));
+
 
 
 module.exports = app;
