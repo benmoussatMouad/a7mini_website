@@ -18,7 +18,7 @@ const {GoogleSpreadsheet} = require("google-spreadsheet");
 var app = express();
 
 //Defining the App's uses
-app.use(logger('dev'));
+// app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -45,11 +45,7 @@ app.get("/google-spreadsheet", async function(req, res){
     res.send(rows[0].worldDeaths);
 });
 
-if (__dirname.slice(-7) === '/public') { // For production
-    app.use(express.static(__dirname))
-} else { // For development
-    app.use(express.static(__dirname + '/public'))
-}
+app.use(express.static('/home/tagduedx/repositories/a7mini/public'));
 
 
 module.exports = app;
