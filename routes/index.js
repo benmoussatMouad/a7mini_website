@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/js/loader.js', (req, res, next) => {
-  res.send('/public/js/loader.js', {root: __dirname.slice(0 , __dirname.length - 6)} );;
+  res.send('/public/js/loader.js'/*, {root: __dirname.slice(0 , __dirname.length - 6)}*/ );;
 });
 
 
