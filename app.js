@@ -18,7 +18,7 @@ const {GoogleSpreadsheet} = require("google-spreadsheet");
 var app = express();
 
 //Defining the App's uses
-// app.use(logger('dev'));
+app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
